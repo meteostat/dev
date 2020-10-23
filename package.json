@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "version": "0.0.1",
+  "description": "Documentation for the Meteostat developers platform.",
+  "main": "index.js",
+  "authors": {
+    "name": "Meteostat",
+    "email": "info@meteostat.net"
+  },
+  "repository": "https://github.com/meteostat/dev",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
