@@ -12,6 +12,9 @@ cd src/.vuepress/dist
 # if you are deploying to a custom domain
 echo 'dev.meteostat.net' > CNAME
 
+# get favicon
+curl "https://meteostat.net/favicon.ico" --output "favicon.ico"
+
 git init
 git add -A
 git commit -m 'Deploy'

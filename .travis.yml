@@ -5,6 +5,8 @@ install:
   - npm ci
 script:
   - npm run build
+  - cd src/.vuepress/dist
+  - curl "https://meteostat.net/favicon.ico" --output "favicon.ico"
 deploy:
   provider: pages
   token: $GITHUB_TOKEN
