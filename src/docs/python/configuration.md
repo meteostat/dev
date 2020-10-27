@@ -1,5 +1,5 @@
 ---
-title: Configuration ‹ Python Library
+title: Configuration | Python Library
 ---
 
 # Configuration

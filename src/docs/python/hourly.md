@@ -1,5 +1,5 @@
 ---
-title: Hourly Data ‹ Python Library
+title: Hourly Data | Python Library
 ---
 
 # Hourly Data

@@ -1,5 +1,5 @@
 ---
-title: Weather Stations ‹ Python Library
+title: Weather Stations | Python Library
 ---
 
 # Weather Stations

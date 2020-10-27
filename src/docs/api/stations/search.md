@@ -1,5 +1,5 @@
 ---
-title: Search ‹ Weather Stations ‹ JSON API
+title: Search | Weather Stations | JSON API
 ---
 
 # Finding Weather Stations
@@ -14,32 +14,32 @@ GET https://api.meteostat.net/v2/stations/search
 
 ## Parameters
 
-| **Parameter** | **Description**               | **Data Type** | **Required** | **Default** |
-|---------------|-------------------------------|---------------|--------------|-------------|
-| query         | The search string             | String        | Yes          | undefined   |
-| limit         | The maximum number of results | Integer       | No           | 8           |
+| **Parameter** | **Description**               | **Type** | **Required** | **Default** |
+|---------------|-------------------------------|----------|--------------|-------------|
+| query         | The search string             | String   | Yes          | `undefined` |
+| limit         | The maximum number of results | Integer  | No           | 8           |
 
-Alternatively, you can download a full list of all weather stations available via Meteostat in JSON format.
+Alternatively, you can download a [full list](/docs/bulk/stations) of all weather stations available via Meteostat in JSON format.
 
 ## Response
 
 The response body includes the following properties.
 
-| **Parameter** | **Description**                                                                                | **Data Type** |
-|---------------|------------------------------------------------------------------------------------------------|---------------|
-| id            | The Meteostat ID of the weather station                                                        | String        |
-| name          | Object containing the name of the weather stations in different languages                      | Object        |
-| country       | ISO 3166-1 alpha-2 country code of the weather station                                         | String        |
-| region        | The state or region of the weather station                                                     | String        |
-| national      | The national ID of the weather station                                                         | String        |
-| wmo           | The WMO ID of the weather station                                                              | Integer       |
-| icao          | The ICAO ID of the weather station                                                             | String        |
-| iata          | The IATA ID of the weather station                                                             | String        |
-| latitude      | The latitude of the weather station                                                            | Float         |
-| longitude     | The longitude of the weather station                                                           | Float         |
-| elevation     | The elevation of the weather station in meters above sea level                                 | Integer       |
-| timezone      | The time zone of the weather station                                                           | String        |
-| active        | A boolean value which is true if the weather station reported data within the previous 90 days | Boolean       |
+| **Parameter** | **Description**                                                                                | **Type** |
+|---------------|------------------------------------------------------------------------------------------------|----------|
+| id            | The Meteostat ID of the weather station                                                        | String   |
+| name          | Object containing the name of the weather stations in different languages                      | Object   |
+| country       | ISO 3166-1 alpha-2 country code of the weather station                                         | String   |
+| region        | The ISO 3166-2 state or region code of the weather station                                     | String   |
+| national      | The national ID of the weather station                                                         | String   |
+| wmo           | The WMO ID of the weather station                                                              | Integer  |
+| icao          | The ICAO ID of the weather station                                                             | String   |
+| iata          | The IATA ID of the weather station                                                             | String   |
+| latitude      | The latitude of the weather station                                                            | Float    |
+| longitude     | The longitude of the weather station                                                           | Float    |
+| elevation     | The elevation of the weather station in meters above sea level                                 | Integer  |
+| timezone      | The time zone of the weather station                                                           | String   |
+| active        | A boolean value which is true if the weather station reported data within the previous 90 days | Boolean  |
 
 ## Example: Search results for “vancouver”
 

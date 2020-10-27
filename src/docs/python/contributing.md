@@ -1,5 +1,5 @@
 ---
-title: Contributing ‹ Python Library
+title: Contributing | Python Library
 ---
 
 # Contributing

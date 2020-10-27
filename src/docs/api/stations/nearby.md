@@ -1,5 +1,5 @@
 ---
-title: Nearby ‹ Weather Stations ‹ JSON API
+title: Nearby | Weather Stations | JSON API
 ---
 
 # Nearby Weather Stations
@@ -20,23 +20,23 @@ GET https://api.meteostat.net/v2/stations/nearby
 
 When calling this endpoint please refer to the following parameters.
 
-| **Parameter** | **Description**                       | **Data Type** | **Required** | **Default** |
-|---------------|---------------------------------------|---------------|--------------|-------------|
-| lat           | The latitude of the location          | Float         | Yes          | `undefined` |
-| lon           | The longitude of the location         | Float         | Yes          | `undefined` |
-| limit         | The maximum number of results         | Integer       | No           | 8           |
-| radius        | The radius of the query in kilometers | Integer       | No           | 100         |
+| **Parameter** | **Description**                       | **Types** | **Required** | **Default** |
+|:--------------|:--------------------------------------|:----------|:-------------|:------------|
+| lat           | The latitude of the location          | Float     | Yes          | `undefined` |
+| lon           | The longitude of the location         | Float     | Yes          | `undefined` |
+| limit         | The maximum number of results         | Integer   | No           | 8           |
+| radius        | The radius of the query in kilometers | Integer   | No           | 100         |
 
 ## Response
 
 The response body includes the following properties.
 
-| **Parameter** | **Description**                                                                                | **Data Type** |
-|---------------|------------------------------------------------------------------------------------------------|---------------|
-| id            | The Meteostat ID of the weather station                                                        | String        |
-| name          | Object containing the name of the weather stations in different languages                      | Object        |
-| active        | A boolean value which is true if the weather station reported data within the previous 90 days | Boolean       |
-| distance      | The distance to the geo location defined in the request                                        | Float         |
+| **Parameter** | **Description**                                                                                | **Type** |
+|:--------------|:-----------------------------------------------------------------------------------------------|:---------|
+| id            | The Meteostat ID of the weather station                                                        | String   |
+| name          | Object containing the name of the weather stations in different languages                      | Object   |
+| active        | A boolean value which is true if the weather station reported data within the previous 90 days | Boolean  |
+| distance      | The distance to the geo location defined in the request                                        | Float    |
 
 ## Example
 

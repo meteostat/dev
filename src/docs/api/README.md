@@ -10,18 +10,24 @@ Access to the API requires users to send their API key along with every request.
 
 All API endpoints are accessible using HTTP Get requests. For debugging, please utilize the HTTP status code of the response.
 
+## API Key
+
+Please submit this [form](https://auth.meteostat.net/) to apply for an API key.
+
+## Quick Start
+
+Once you have your API key, head over to your terminal, replace the `{key}` parameter with your personal API key and execute the following command:
+
+```sh
+curl --header "x-api-key: {key}" "https://api.meteostat.net/v2/stations/meta?id=10637"
+```
+
+You should see meta information for the weather station _Frankfurt Airport_ in JSON format.
+
 ## Quota
 
 Free access to the Meteostat API is limited to 2,000 requests per day and no more than two requests per second. Once this limit is reached, all of your requests will result in HTTP 429, too many requests, until your quota is cleared.
 
 ## Authentication
 
-When retrieving data from Meteostat API endpoints make sure to send the x-api-key header along with every request. You cannot use the key URL parameter to authenticate API calls as in version 1.
-
-## Example: Authentication Header
-
-```
-curl --header "x-api-key: {key}" "https://api.meteostat.net/v2/stations/nearby?lat=1.28&lon=103.83&limit=3"
-```
-
-Please replace `{key}` with your personal API key. You should also consider using an API client like Postman for development.
+When retrieving data from Meteostat API endpoints make sure to send the `x-api-key` header along with every request. You cannot use the key URL parameter to authenticate API calls as in version 1.

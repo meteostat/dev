@@ -2,7 +2,15 @@
 
 The Meteostat bulk data interface provides access to full data dumps of individual weather stations. The data is provided in CSV (weather data) and JSON (weather stations) format. Users are **not required to sign up** for this service.
 
-If you are working with longer periods of time or if your use case exceeds the limitations of our JSON API, bulk data dumps have you covered. You should also consider using our [Python library](/docs/python/) which is essentially a wrapper for the bulk data interface.
+## Quick Start
+
+The download of full data dumps is dead simple and doesn’t even require an API key:
+
+```sh
+curl "https://bulk.meteostat.net/hourly/10637.csv.gz" --output "10637.csv.gz"
+```
+
+With our [Python library](/docs/python/) we're providing a simple, yet powerful, wrapper for bulk data dumps. If you're into more complex analysis you should definitely have a look at it.
 
 ## Endpoint
 

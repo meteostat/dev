@@ -18,7 +18,10 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://meteostat.net/files/favicon-16x16.png' }],
+    ['meta', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://meteostat.net/files/favicon-32x32.png' }],
+    ['meta', { rel: 'icon', href: 'https://meteostat.net/files/icon.svg' }]
   ],
 
   /**
@@ -27,10 +30,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsRepo: 'meteostat/dev',
+    docsDir: 'src',
+    editLinks: true,
+    docsBranch: 'main',
     lastUpdated: 'Last Updated',
     logo: 'https://meteostat.net/files/icon.svg',
     nav: [
@@ -44,34 +47,40 @@ module.exports = {
       },
       {
         text: 'JSON API',
-        link: '/docs/api/v2/'
+        link: '/docs/api/'
+      },
+      {
+        text: 'Contributing',
+        link: '/docs/contributing/'
       },
       {
         text: 'Project',
-        items: [{
-          text: 'Legal',
-          items: [
-            {
-              text: 'Terms',
-              link: '/docs/getting-started.html'
-            }, {
-              text: 'Legal Disclosure',
-              link: '/docs/bulk-data.html'
-            }, {
-              text: 'Privacy',
-              link: '/docs/bulk-data.html'
-            }
-          ]
-        },
-        {
-          text: 'Meteostat',
-          items: [
-            {
-              text: 'Webapp',
-              link: '/docs/json-api.html'
-            }
-          ]
-        }]
+        items: [
+          {
+            text: 'Meteostat',
+            items: [
+              {
+                text: 'Webapp',
+                link: 'https://meteostat.net/en'
+              }
+            ]
+          },
+          {
+            text: 'Legal',
+            items: [
+              {
+                text: 'Terms & License',
+                link: '/docs/terms'
+              }, {
+                text: 'Legal Disclosure',
+                link: 'https://meteostat.net/en/legal'
+              }, {
+                text: 'Privacy',
+                link: 'https://meteostat.net/en/privacy'
+              }
+            ]
+          }
+        ]
       },
       {
         text: 'GitHub',
@@ -79,6 +88,42 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/docs/contributing/': [
+        {
+          title: 'Fundamentals',
+          collapsable: false,
+          children: [
+            {
+              title: 'Getting Started',
+              path: '/docs/contributing/'
+            },
+            {
+              title: 'Documentation',
+              path: '/docs/contributing/docs'
+            }
+          ]
+        },
+        {
+          title: 'Interfaces',
+          collapsable: false,
+          children: [
+            {
+              title: 'Python',
+              path: '/docs/python/contributing'
+            }
+          ]
+        },
+        {
+          title: 'Database',
+          collapsable: false,
+          children: [
+            {
+              title: 'Weather Stations',
+              path: 'stations'
+            }
+          ]
+        }
+      ],
       '/docs/bulk/': [
         {
           title: 'Bulk Data',
@@ -87,6 +132,18 @@ module.exports = {
             {
               title: 'Getting Started',
               path: '/docs/bulk/'
+            },
+            {
+              title: 'Weather Stations',
+              path: 'stations'
+            },
+            {
+              title: 'Hourly Data',
+              path: 'hourly'
+            },
+            {
+              title: 'Daily Data',
+              path: 'daily'
             }
           ]
         }
@@ -123,14 +180,14 @@ module.exports = {
           ]
         }
       ],
-      '/docs/api/v2/': [
+      '/docs/api/': [
         {
           title: 'JSON API',
           collapsable: false,
           children: [
             {
               title: 'Getting Started',
-              path: '/docs/api/v2/'
+              path: '/docs/api/'
             },
             {
               title: 'Weather Stations',
@@ -197,7 +254,9 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'formats'
+            'formats',
+            'terms',
+            'sources'
           ]
         },
         {
@@ -206,7 +265,17 @@ module.exports = {
           children: [
             '/docs/python/',
             '/docs/bulk/',
-            '/docs/api/v2/'
+            '/docs/api/'
+          ]
+        },
+        {
+          title: 'Miscellaneous',
+          collapsable: false,
+          children: [
+            {
+              title: 'Contributing',
+              path: '/docs/contributing/'
+            }
           ]
         }
       ]
@@ -218,6 +287,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-medium-zoom'
   ]
 }

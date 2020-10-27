@@ -1,5 +1,5 @@
 ---
-title: Daily Data ‹ Python Library
+title: Daily Data | Python Library
 ---
 
 # Daily Data
