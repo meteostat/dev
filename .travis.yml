@@ -6,9 +6,11 @@ install:
 script:
   - npm run build
 deploy:
-  provider: pages
-  skip_cleanup: true
+  provider: pages:git
   local_dir: src/.vuepress/dist
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
+  repo: meteostat/meteostat.github.io
+  target_branch: master
+  fqdn: dev.meteostat.net
   on:
-    branch: master
+    branch: main
