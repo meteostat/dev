@@ -14,7 +14,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3",
-    "vuepress-plugin-clean-urls": "^1.1.2"
+    "vuepress": "^1.5.3"
   }
 }
