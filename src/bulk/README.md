@@ -10,7 +10,7 @@ The download of full data dumps is dead simple and doesn’t even require an API
 curl "https://bulk.meteostat.net/hourly/10637.csv.gz" --output "10637.csv.gz"
 ```
 
-With our [Python library](/docs/python/) we're providing a simple, yet powerful, wrapper for bulk data dumps. If you're into more complex analysis you should definitely have a look at it.
+With our [Python library](/python/) we're providing a simple, yet powerful, wrapper for bulk data dumps. If you're into more complex analysis you should definitely have a look at it.
 
 ## Endpoint
 
@@ -22,4 +22,4 @@ In contrast to our JSON API the Bulk Data interface does not require an API key.
 
 ## Update Cycle
 
-To keep the load on our infrastructure as low as possible, Meteostat updates bulk data dumps individually for each weather station. Generally, all dumps should be updated at least once a week. The [list of weather stations](/docs/bulk/stations/) is updated daily.
+To keep the load on our infrastructure as low as possible, Meteostat updates bulk data dumps individually for each weather station. Generally, all dumps should be updated at least once a week. The [list of weather stations](/bulk/stations/) is updated daily.

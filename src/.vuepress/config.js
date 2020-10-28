@@ -38,20 +38,24 @@ module.exports = {
     logo: 'https://meteostat.net/files/icon.svg',
     nav: [
       {
+        text: 'Documentation',
+        link: '/docs/'
+      },
+      {
         text: 'Python',
-        link: '/docs/python/'
+        link: '/python/'
       },
       {
         text: 'Bulk Data',
-        link: '/docs/bulk/'
+        link: '/bulk/'
       },
       {
         text: 'JSON API',
-        link: '/docs/api/'
+        link: '/api/'
       },
       {
         text: 'Contributing',
-        link: '/docs/contributing/'
+        link: '/contributing/'
       },
       {
         text: 'Project',
@@ -104,18 +108,18 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/docs/contributing/': [
+      '/contributing/': [
         {
           title: 'Fundamentals',
           collapsable: false,
           children: [
             {
               title: 'Getting Started',
-              path: '/docs/contributing/'
+              path: '/contributing/'
             },
             {
               title: 'Documentation',
-              path: '/docs/contributing/docs'
+              path: 'docs'
             }
           ]
         },
@@ -125,7 +129,7 @@ module.exports = {
           children: [
             {
               title: 'Python',
-              path: '/docs/python/contributing'
+              path: '/python/contributing'
             }
           ]
         },
@@ -162,14 +166,14 @@ module.exports = {
           ]
         }
       ],
-      '/docs/bulk/': [
+      '/bulk/': [
         {
           title: 'Bulk Data',
           collapsable: false,
           children: [
             {
               title: 'Getting Started',
-              path: '/docs/bulk/'
+              path: '/bulk/'
             },
             {
               title: 'Weather Stations',
@@ -208,14 +212,14 @@ module.exports = {
           ]
         }
       ],
-      '/docs/python/': [
+      '/python/': [
         {
           title: 'Python Library',
           collapsable: false,
           children: [
             {
               title: 'Getting Started',
-              path: '/docs/python/'
+              path: '/python/'
             },
             {
               title: 'Configuration',
@@ -262,14 +266,14 @@ module.exports = {
           ]
         }
       ],
-      '/docs/api/': [
+      '/api/': [
         {
           title: 'JSON API',
           collapsable: false,
           children: [
             {
               title: 'Getting Started',
-              path: '/docs/api/'
+              path: '/api/'
             },
             {
               title: 'Weather Stations',
@@ -367,9 +371,9 @@ module.exports = {
           title: 'Interfaces',
           collapsable: false,
           children: [
-            '/docs/python/',
-            '/docs/bulk/',
-            '/docs/api/'
+            '/python/',
+            '/bulk/',
+            '/api/'
           ]
         },
         {
@@ -378,7 +382,7 @@ module.exports = {
           children: [
             {
               title: 'Contributing',
-              path: '/docs/contributing/'
+              path: '/contributing/'
             }
           ]
         },

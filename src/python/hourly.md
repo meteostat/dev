@@ -42,7 +42,7 @@ The DataFrame provides the following columns:
 * `wpgt`: The peak wind gust in _km/h_
 * `pres`: The average sea-level air pressure in _hPa_
 * `tsun`: The one hour sunshine total in minutes (_m_)
-* `coco`: The [weather condition code](https://dev.meteostat.net/getting-started/formats-and-units)
+* `coco`: The [weather condition code](/docs/formats.html#weather-condition-codes)
 
 ## Normalization
 Meteostat essentially skips gaps in its time series. Therefore, the raw response does not necessarily contain one row per hour. You can make sure gaps are filled with `nan` values by applying the `normalize()` method. Our example from above could easily be normalized by making a small change:

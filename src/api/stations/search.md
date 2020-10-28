@@ -15,18 +15,18 @@ GET https://api.meteostat.net/v2/stations/search
 ## Parameters
 
 | **Parameter** | **Description**               | **Type** | **Required** | **Default** |
-|---------------|-------------------------------|----------|--------------|-------------|
+|:--------------|:------------------------------|:---------|:-------------|:------------|
 | query         | The search string             | String   | Yes          | `undefined` |
 | limit         | The maximum number of results | Integer  | No           | 8           |
 
-Alternatively, you can download a [full list](/docs/bulk/stations) of all weather stations available via Meteostat in JSON format.
+Alternatively, you can download a [full list](/bulk/stations) of all weather stations available via Meteostat in JSON format.
 
 ## Response
 
 The response body includes the following properties.
 
 | **Parameter** | **Description**                                                                                | **Type** |
-|---------------|------------------------------------------------------------------------------------------------|----------|
+|:--------------|:-----------------------------------------------------------------------------------------------|:---------|
 | id            | The Meteostat ID of the weather station                                                        | String   |
 | name          | Object containing the name of the weather stations in different languages                      | Object   |
 | country       | ISO 3166-1 alpha-2 country code of the weather station                                         | String   |

@@ -6,9 +6,9 @@ Meteostat is an open platform that provides **free access** to weather and clima
 
 Meteostat provides multiple interfaces for retrieving weather and climate data. Please choose from one of the following options:
 
-* [Python Library](/docs/python/): Analyze historical weather data for thousands of weather stations
-* [Bulk Data](/docs/bulk/): Download full data dumps of individual weather stations
-* [JSON API](/docs/api/): Simple and fast access of Meteostat data in JSON format
+* [Python Library](/python/): Analyze historical weather data for thousands of weather stations
+* [Bulk Data](/bulk/): Download full data dumps of individual weather stations
+* [JSON API](/api/): Simple and fast access of Meteostat data in JSON format
 
 ## About Meteostat
 
