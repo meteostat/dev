@@ -62,6 +62,22 @@ module.exports = {
               {
                 text: 'Webapp',
                 link: 'https://meteostat.net/en'
+              },
+              {
+                text: 'Twitter',
+                link: 'https://twitter.com/meteost'
+              },
+              {
+                text: 'Slack',
+                link: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+              },
+              {
+                text: 'Blog',
+                link: 'https://medium.com/meteostat'
+              },
+              {
+                text: 'Donation',
+                link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
               }
             ]
           },
@@ -122,6 +138,28 @@ module.exports = {
               path: 'stations'
             }
           ]
+        },
+        {
+          title: 'Connect',
+          collapsable: false,
+          children: [
+            {
+              title: 'Twitter',
+              path: 'https://twitter.com/meteost'
+            },
+            {
+              title: 'Slack',
+              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+            },
+            {
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
+            },
+            {
+              title: 'Donation',
+              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
+            }
+          ]
         }
       ],
       '/docs/bulk/': [
@@ -144,6 +182,28 @@ module.exports = {
             {
               title: 'Daily Data',
               path: 'daily'
+            }
+          ]
+        },
+        {
+          title: 'Connect',
+          collapsable: false,
+          children: [
+            {
+              title: 'Twitter',
+              path: 'https://twitter.com/meteost'
+            },
+            {
+              title: 'Slack',
+              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+            },
+            {
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
+            },
+            {
+              title: 'Donation',
+              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
             }
           ]
         }
@@ -176,6 +236,28 @@ module.exports = {
             {
               title: 'Contributing',
               path: 'contributing'
+            }
+          ]
+        },
+        {
+          title: 'Connect',
+          collapsable: false,
+          children: [
+            {
+              title: 'Twitter',
+              path: 'https://twitter.com/meteost'
+            },
+            {
+              title: 'Slack',
+              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+            },
+            {
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
+            },
+            {
+              title: 'Donation',
+              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
             }
           ]
         }
@@ -246,6 +328,28 @@ module.exports = {
               ]
             }
           ]
+        },
+        {
+          title: 'Connect',
+          collapsable: false,
+          children: [
+            {
+              title: 'Twitter',
+              path: 'https://twitter.com/meteost'
+            },
+            {
+              title: 'Slack',
+              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+            },
+            {
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
+            },
+            {
+              title: 'Donation',
+              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
+            }
+          ]
         }
       ],
       '/docs/': [
@@ -277,6 +381,28 @@ module.exports = {
               path: '/docs/contributing/'
             }
           ]
+        },
+        {
+          title: 'Connect',
+          collapsable: false,
+          children: [
+            {
+              title: 'Twitter',
+              path: 'https://twitter.com/meteost'
+            },
+            {
+              title: 'Slack',
+              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
+            },
+            {
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
+            },
+            {
+              title: 'Donation',
+              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
+            }
+          ]
         }
       ]
     }
@@ -287,14 +413,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    [
-      'vuepress-plugin-clean-urls',
-      {
-        normalSuffix: '',
-        indexSuffix: '',
-        notFoundPath: '/404.html',
-      },
-    ]
+    '@vuepress/plugin-medium-zoom'
   ]
 }

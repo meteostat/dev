@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://meteostat.net/files/icon.svg
-tagline: Meteostat is an open platform that provides free access to weather and climate data.
+tagline: Meteostat is an open platform which provides free access to weather and climate data.
 actionText: Documentation →
 actionLink: /docs/
 features:
