@@ -10,4 +10,4 @@ Nowadays, most stations run fully automized. However, in contrast to computed mo
 
 ## Contributing
 
-Meteostat operates an open directory of weather stations. Learn more about how to contribute to this collection in the corresponding [documentation](/contributing/stations).
+Meteostat operates an open directory of weather stations. Learn more about how to contribute to this collection in the corresponding [documentation](/contributing/stations.html).

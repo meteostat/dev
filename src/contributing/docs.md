@@ -8,8 +8,4 @@ Keeping our documentation up-to-date is crucial. If you are contributing to part
 
 ## Deployment
 
-At the moment, we don't deploy changes automatically. Team members of Meteostat with necessary permissions can deploy documentation updates to our GitHub Pages repository. From the root directory of the _dev_ repository, run:
-
-```sh
-sh deploy.sh
-```
+The Meteostat team will review all pull requests. Once a PR has been approved and merged into the `master` branch, Meteostat will automatically deploy changes into the productive environment.

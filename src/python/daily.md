@@ -69,7 +69,7 @@ data = data.normalize().interpolate(limit = 1).fetch()
 ## Aggregation
 Aggregation is another important tool in data science. Meteostat provides an `aggregate()` method for time-wise and spatial aggregation. It takes a `freq` parameter which specifies the frequency of our aggregation. Optionally, you can overwrite the default aggregation functions by passing a dictionary to the `functions` parameter. If you want to apply aggregation across all weather stations in your result, just set the `spatial` parameter to `True`.
 
-Let's dig into the [sampled](https://github.com/meteostat/meteostat-python/wiki/Weather-Stations#sample) US average temperatures for the past 40 years as an example:
+Let's dig into the [sampled](/python/stations.html#sample) US average temperatures for the past 40 years as an example:
 
 ```python
 # Import requirements

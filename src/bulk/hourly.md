@@ -36,4 +36,4 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 12        | tsun          | The one hour sunshine total in minutes (m) | Integer  |
 | 13        | coco          | The weather condition code                 | Integer  |
 
-More information on the data formats and weather condition codes is available [here](/docs/formats).
+More information on the data formats and weather condition codes is available [here](/docs/formats.html).

@@ -1,6 +1,6 @@
 # Introduction
 
-Meteostat is an open platform that provides **free access** to weather and climate statistics for **non-commercial purposes**.
+Meteostat is an open platform which provides **free access** to weather and climate statistics for **non-commercial purposes**.
 
 ## Our Services
 

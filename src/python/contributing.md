@@ -31,4 +31,4 @@ python3 -m coverage run --source=. -m unittest discover && python3 -m coverage r
 ```
 
 ## Changing a Weather Station's Meta Data
-If you want to update some information or correct an error in the list of weather stations, please refer to [this repository](https://github.com/meteostat/weather-stations).
+If you want to update some information or correct an error in the list of weather stations, please refer to [this documentation](/contributing/stations.html).

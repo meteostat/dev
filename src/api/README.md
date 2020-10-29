@@ -12,7 +12,7 @@ All API endpoints are accessible using HTTP Get requests. For debugging, please 
 
 ## API Key
 
-Please submit this [form](https://auth.meteostat.net/) to apply for an API key.
+Please submit this [**form**](https://auth.meteostat.net/) to apply for an API key.
 
 ## Quick Start
 
@@ -30,4 +30,18 @@ Free access to the Meteostat API is limited to 2,000 requests per day and no mor
 
 ## Authentication
 
-When retrieving data from Meteostat API endpoints make sure to send the `x-api-key` header along with every request. You cannot use the key URL parameter to authenticate API calls as in version 1.
+When retrieving data from Meteostat API endpoints make sure to send the `x-api-key` header along with every request. You cannot use the `key` URL parameter to authenticate API calls as in version 1.
+
+## Status Codes
+
+All Meteostat API endpoints return one of the following status codes. You can utilize them for debugging.
+
+| **Code** | **Description**                                              |
+|:---------|:-------------------------------------------------------------|
+| 200      | _Success_: Alls is fine                                      |
+| 400      | _Bad Request_: Please check the request parameters           |
+| 401      | _Unauthorized_: Make sure to send a valid `x-api-key` header |
+| 403      | _Forbidden_: You're not allowed to access this endpoint      |
+| 404      | _Not Found_: This endpoint doesn't exist                     |
+| 429      | _Too Many Requests_: You've exceeded the quota               |
+| 503      | _Service Temporarily Unavailable_: The API is currently down |

@@ -18,8 +18,8 @@ With our [Python library](/python/) we're providing a simple, yet powerful, wrap
 https://bulk.meteostat.net
 ```
 
-In contrast to our JSON API the Bulk Data interface does not require an API key. However, when using this service you must comply with our terms of service. Please make sure to cache data if possible and forbear from sending malicious calls to this service.
+In contrast to our JSON API the Bulk Data interface does not require an API key. However, when using this service you must comply with our [terms of service](/docs/terms.html). Please make sure to cache data if possible and forbear from sending malicious calls to this service.
 
 ## Update Cycle
 
-To keep the load on our infrastructure as low as possible, Meteostat updates bulk data dumps individually for each weather station. Generally, all dumps should be updated at least once a week. The [list of weather stations](/bulk/stations/) is updated daily.
+To keep the load on our infrastructure as low as possible, Meteostat updates bulk data dumps individually for each weather station. Generally, all dumps should be updated at least once a week. The [list of weather stations](/bulk/stations.html) is updated daily.

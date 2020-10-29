@@ -124,22 +124,22 @@ module.exports = {
           ]
         },
         {
+          title: 'Data',
+          collapsable: false,
+          children: [
+            {
+              title: 'Weather Stations',
+              path: 'stations'
+            }
+          ]
+        },
+        {
           title: 'Interfaces',
           collapsable: false,
           children: [
             {
               title: 'Python',
               path: '/python/contributing'
-            }
-          ]
-        },
-        {
-          title: 'Database',
-          collapsable: false,
-          children: [
-            {
-              title: 'Weather Stations',
-              path: 'stations'
             }
           ]
         },
@@ -330,6 +330,10 @@ module.exports = {
                   path: 'point/climate'
                 }
               ]
+            },
+            {
+              title: 'Get A Key',
+              path: 'https://auth.meteostat.net/'
             }
           ]
         },

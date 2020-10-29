@@ -4,7 +4,7 @@ Meteostat uses the metric system. Both the JSON API and the Bulk Data interface 
 
 ## Time Format
 
-Date and time statements follow the ISO 8601 standard (e.g. 2016-12-31 for December 31st 2016 and 23:59:58 for 23 hours, 59 minutes, and 58 seconds). The time zone used by Meteostat is Coordinated Universal Time (UTC).
+Date and time statements follow the ISO 8601 standard (e.g. _2016-12-31_ for _December 31st 2016_ and _23:59:58_ for _23 hours, 59 minutes, and 58 seconds_). The time zone used by Meteostat is Coordinated Universal Time (UTC).
 
 ### Time Ranges
 
@@ -15,7 +15,7 @@ Many JSON API endpoints require the specification of a time range using the <cod
 The Meteostat API uses abbreviations to describe meteorological parameters:
 
 | **Code** | **Meaning**             |
-|----------|-------------------------|
+|:---------|:------------------------|
 | TEMP     | Air Temperature         |
 | TAVG     | Average Temperature     |
 | TMIN     | Minimum Temperature     |
@@ -34,7 +34,7 @@ The Meteostat API uses abbreviations to describe meteorological parameters:
 ## Meteorological Data Units
 
 | **Parameter(s)**           | **Unit**       |
-|----------------------------|----------------|
+|:---------------------------|:---------------|
 | Temperature                | °C             |
 | Precipitation              | mm             |
 | Sunshine Duration          | Minutes, Hours |
@@ -46,12 +46,12 @@ The Meteostat API uses abbreviations to describe meteorological parameters:
 
 ## Weather Condition Codes
 
-Hourly weather data may include information on the observed weather condition. Please note that the weather condition is not a key parameter for the Meteostat project. METAR reports issued by weather stations located at airports only report significant weather events. Also, some weather stations do not provide weather condition data at all.
+Hourly weather data may include information on the observed weather condition. Please note that the weather condition is not a key parameter for Meteostat. METAR reports, issued by weather stations located at airports, only report significant weather events. Also, some weather stations do not provide weather condition data at all.
 
 Weather conditions are indicated by an integer value between 1 and 27 according to this list:
 
 | **Code** | **Weather Condition** |
-|----------|-----------------------|
+|:---------|:----------------------|
 | 1        | Clear                 |
 | 2        | Fair                  |
 | 3        | Cloudy                |
