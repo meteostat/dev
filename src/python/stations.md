@@ -10,7 +10,7 @@ In contrast to other meteorological data interfaces Meteostat does not use a glo
 Weather stations are selected through the `Stations` class. Optionally, filters can be specified using constructor arguments.
 
 ### Physical Distance
-In most cases you will probably want to select a weather station which is located closest to a certain geo location. Doing so is pretty straight-forward:
+In most cases you will probably want to select a weather station which is located closest to a certain geo location. Doing so is pretty straightforward:
 
 ```python
 # Import Stations class from Meteostat package
