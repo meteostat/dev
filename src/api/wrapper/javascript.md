@@ -100,6 +100,16 @@ meteostat.stations.daily({
 })
 ```
 
+### Climate Normals
+
+This method provides access to the data made available through the [_stations/climate_](/api/stations/climate.html) endpoint. The method takes the same parameters and uses the same response format as the corresponding endpoint.
+
+```javascript
+meteostat.stations.climate({
+  station: 83779,
+})
+```
+
 ## Point Data
 
 The methods described in this chapter provide access to meteorological data through geographical coordinates.
