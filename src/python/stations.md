@@ -6,10 +6,12 @@ title: Weather Stations | Python Library
 
 In contrast to other meteorological data interfaces Meteostat does not use a global data model. Instead, Meteostat provides weather observations and long-term climate statistics for individual weather stations. Understandably, no one knows the identifiers of each and every weather station. Therefore, Meteostat provides a simple interface for querying weather stations using several filters.
 
-## Selecting Weather Stations
+## Finding Stations
+
 Weather stations are selected through the `Stations` class. Optionally, filters can be specified using constructor arguments.
 
 ### Physical Distance
+
 In most cases you will probably want to select a weather station which is located closest to a certain geo location. Doing so is pretty straightforward:
 
 ```python
@@ -29,6 +31,7 @@ print(station['name'])
 `lat` and `lon` are used for specifying latitude and longitude, respectively. Keep in mind that the `fetch()` method **returns a Pandas DataFrame**. In most cases it makes sense to specify a `limit` when fetching weather stations.
 
 ### Country & State
+
 Especially when calculating regional averages it makes sense to filter for administrative regions. Meteostat provides `country` (_ISO 3166-1 alpha-2_ code) and `region` (_ISO-3166-2_ code) filters. Let's pretend you want the total number of weather stations in Ontario, Canada:
 
 ```python
@@ -43,6 +46,7 @@ print('Stations in Ontario: ' + stations.count())
 ```
 
 ### Bounding Box
+
 Some cases may require the selection of all weather stations in a geographic bounding box using the `bounds` argument:
 
 ```python
@@ -63,6 +67,7 @@ The `bounds` filter requires a list of four numbers in the following order:
 * The bottom right longitude
 
 ### Identifier
+
 If you already know the Meteostat, WMO or ICAO ID of a weather station, you can query corresponding meta data directly:
 
 ```python
@@ -81,7 +86,8 @@ print(station['name'])
 
 Alternatively, you can also pass a list of identifiers to the `id`, `wmo` and `icao` parameter.
 
-## Filter by Data Inventory
+## Inventory Filters
+
 In most cases a `Stations` query is followed by either a call to the `Daily` or `Hourly` class. In this case you will probably want to check first if the weather station(s) you are selecting did report any data in the time you are looking for. You can do so by passing a `daily` or `hourly` attribute to the `Stations` class that specifies a `datetime` which has to be present in the data inventory.
 
 **Important:** The inventory is based on a start and end date for both daily and hourly data. There are most certainly gaps in the time series which won't be considered by the inventory filters.
@@ -103,19 +109,20 @@ station = stations.fetch(limit = 1).to_dict('records')[0]
 print(station['name'])
 ```
 
-## Fetching Weather Stations
-Meteostat provides multiple methods for fetching weather stations. After you have specified a query through the `Stations` class you can now either fetch a list of all stations in the result or get the total.
+## Fetching Stations
 
-### Fetch
 After you have specified a query through the `Stations` class you can now access the result using the `fetch()` method. It takes an optional `limit` argument. If no `limit` is specified, Meteostat will return all weather stations which meet the criteria. The weather stations are returned as a Pandas DataFrame.
 
-### Sample
-Similarly to `fetch()`, the `sample()` method returns a Pandas DataFrame of all weather stations in the query result. However, the default `limit` is set to `1`. The method returns weather stations in random order. It is useful for performing analysis of larger areas on a sample set of weather stations which represent the whole area.
+### Sampling
 
-### Count
+If you want to select a random subset of weather stations, just pass `sample = True` combined with any `limit` to the `fetch()` method. Sampling is useful for performing analysis of larger areas on a sample set of weather stations which represent the whole area.
+
+## Counting Stations
+
 The `count()` method returns the total number of weather stations in the query result as an integer.
 
 ## Data Structure
+
 Each weather station is represented by a Pandas DataFrame row which provides meta information about the station. These are the different columns:
 
 * `id`: The Meteostat ID of the weather station

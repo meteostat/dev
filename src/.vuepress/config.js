@@ -16,7 +16,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#0678BE' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['meta', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://meteostat.net/files/favicon-16x16.png' }],
@@ -142,28 +142,6 @@ module.exports = {
               path: '/python/contributing'
             }
           ]
-        },
-        {
-          title: 'Connect',
-          collapsable: false,
-          children: [
-            {
-              title: 'Twitter',
-              path: 'https://twitter.com/meteost'
-            },
-            {
-              title: 'Slack',
-              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-            },
-            {
-              title: 'Blog',
-              path: 'https://medium.com/meteostat'
-            },
-            {
-              title: 'Donation',
-              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
-            }
-          ]
         }
       ],
       '/bulk/': [
@@ -186,28 +164,6 @@ module.exports = {
             {
               title: 'Daily Data',
               path: 'daily'
-            }
-          ]
-        },
-        {
-          title: 'Connect',
-          collapsable: false,
-          children: [
-            {
-              title: 'Twitter',
-              path: 'https://twitter.com/meteost'
-            },
-            {
-              title: 'Slack',
-              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-            },
-            {
-              title: 'Blog',
-              path: 'https://medium.com/meteostat'
-            },
-            {
-              title: 'Donation',
-              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
             }
           ]
         }
@@ -240,28 +196,6 @@ module.exports = {
             {
               title: 'Contributing',
               path: 'contributing'
-            }
-          ]
-        },
-        {
-          title: 'Connect',
-          collapsable: false,
-          children: [
-            {
-              title: 'Twitter',
-              path: 'https://twitter.com/meteost'
-            },
-            {
-              title: 'Slack',
-              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-            },
-            {
-              title: 'Blog',
-              path: 'https://medium.com/meteostat'
-            },
-            {
-              title: 'Donation',
-              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
             }
           ]
         }
@@ -332,30 +266,18 @@ module.exports = {
               ]
             },
             {
+              title: 'Wrapper',
+              collapsable: false,
+              children: [
+                {
+                  title: 'JavaScript',
+                  path: 'wrapper/javascript'
+                }
+              ]
+            },
+            {
               title: 'Get A Key',
               path: 'https://auth.meteostat.net/'
-            }
-          ]
-        },
-        {
-          title: 'Connect',
-          collapsable: false,
-          children: [
-            {
-              title: 'Twitter',
-              path: 'https://twitter.com/meteost'
-            },
-            {
-              title: 'Slack',
-              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-            },
-            {
-              title: 'Blog',
-              path: 'https://medium.com/meteostat'
-            },
-            {
-              title: 'Donation',
-              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
             }
           ]
         }

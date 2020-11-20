@@ -29,7 +29,7 @@ data = Daily(station, start = datetime(2018, 1, 1), end = datetime(2018, 12, 31)
 data = data.fetch()
 
 # Plot line chart including average, minimum and maximum temperature
-data.plot(x = 'time', y = ['tavg', 'tmin', 'tmax'], kind = 'line')
+data.plot(y = ['tavg', 'tmin', 'tmax'], kind = 'line')
 plt.show()
 ```
 

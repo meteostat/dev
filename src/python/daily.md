@@ -7,7 +7,10 @@ title: Daily Data | Python Library
 Aggregated daily data is very useful when analyzing weather and climate over a longer period of time. The data provided through the `Daily` class contains only aggregated observations. Model data is not included in those statistics which makes the data very accurate, but causes some gaps in the time series.
 
 ## Data Access
-The `Daily` class takes a mandatory `stations` parameter which can either be supplied with a fetched query to the `Stations` class or a list of Meteostat weather station identifiers. Furthermore, you can pass a `start` and `end` datetime to limit your query to a certain time range. Let's have a look at this example:
+
+The `Daily` class takes a mandatory `stations` parameter which can either be supplied with a fetched query to the `Stations` class or a list of Meteostat weather station identifiers. Furthermore, you can pass a `start` and `end` datetime to limit your query to a certain time range.
+
+Let's have a look at this example:
 
 ```python
 # Import requirements
@@ -24,16 +27,17 @@ data = Daily(station, start = datetime(2018, 1, 1), end = datetime(2018, 12, 31)
 data = data.fetch()
 
 # Plot line chart including average, minimum and maximum temperature
-data.plot(x = 'time', y = ['tavg', 'tmin', 'tmax'], kind = 'line')
+data.plot(y = ['tavg', 'tmin', 'tmax'], kind = 'line')
 plt.show()
 ```
 
-The `fetch()` method returns a Pandas DataFrame with multiple meteorological columns.
+The `fetch()` method returns a Pandas DataFrame with multiple meteorological columns. If your query refers to a single weather station, the DataFrame has an index on the `time` column. Otherwise, the response DataFrame has a multi index on the `time` and `station` columns.
 
 ## Response Parameters
+
 The DataFrame provides the following columns:
 
-* `station`: The Meteostat ID of the weather station
+* `station`: The Meteostat ID of the weather station (only if your query refers to multiple stations)
 * `time`: The date
 * `tavg`: The average air temperature in _°C_
 * `tmin`: The minimum air temperature in _°C_
@@ -47,6 +51,7 @@ The DataFrame provides the following columns:
 * `tsun`: The daily sunshine total in minutes (_m_)
 
 ## Normalization
+
 Meteostat essentially skips gaps in its time series. Therefore, the raw response does not necessarily contain one row per day. You can make sure gaps are filled with `nan` values by applying the `normalize()` method. Our example from above could easily be normalized by making a small change:
 
 ```python
@@ -57,6 +62,7 @@ data = data.normalize().fetch()
 ```
 
 ## Interpolation
+
 Normalizing your data paves the way for interpolation. The `interpolate()` method closes gaps in your time series using linear regression. It takes a `limit` parameter which specifies the maximum number of consecutive `nan` values. The default value of `3` means that up to three consecutive missing days are interpolated. Again, we can simply adapt our existing example:
 
 ```python
@@ -67,9 +73,10 @@ data = data.normalize().interpolate(limit = 1).fetch()
 ```
 
 ## Aggregation
+
 Aggregation is another important tool in data science. Meteostat provides an `aggregate()` method for time-wise and spatial aggregation. It takes a `freq` parameter which specifies the frequency of our aggregation. Optionally, you can overwrite the default aggregation functions by passing a dictionary to the `functions` parameter. If you want to apply aggregation across all weather stations in your result, just set the `spatial` parameter to `True`.
 
-Let's dig into the [sampled](/python/stations.html#sample) US average temperatures for the past 40 years as an example:
+Let's dig into the [sampled](/python/stations.html#sampling) US average temperatures for the past 40 years as an example:
 
 ```python
 # Import requirements
@@ -92,6 +99,7 @@ plt.show()
 ```
 
 ### Default Aggregation Functions
+
 By default, Meteostat uses the following aggregation functions:
 
 * `time` => `first`
@@ -109,7 +117,9 @@ By default, Meteostat uses the following aggregation functions:
 You can overwrite the defaults by passing a dictionary to the `functions` parameter.
 
 ## Data Coverage
+
 The `coverage()` method returns a float value which describes the completeness of a DataFrame or series. A value of `1` (= 100%) means that the dataset is complete. The method takes an optional `parameter` attribute. If present, the method returns the coverage for that particular parameter instead of the whole DataFrame.
 
 ## Fetch
-The `fetch()` method returns a Pandas DataFrame.
+
+The `fetch()` method returns a Pandas DataFrame. If your query refers to a single weather station, the DataFrame has an index on the `time` column. Otherwise, the response DataFrame has a multi index on the `time` and `station` columns.
