@@ -178,10 +178,6 @@ module.exports = {
               path: '/python/'
             },
             {
-              title: 'Configuration',
-              path: 'configuration'
-            },
-            {
               title: 'Weather Stations',
               path: 'stations'
             },
@@ -196,6 +192,127 @@ module.exports = {
             {
               title: 'Contributing',
               path: 'contributing'
+            },
+            {
+              title: 'API',
+              children: [
+                {
+                  title: 'meteostat.Stations',
+                  path: 'api/stations/'
+                },
+                {
+                  title: 'meteostat.Stations.nearby',
+                  path: 'api/stations/nearby'
+                },
+                {
+                  title: 'meteostat.Stations.bounds',
+                  path: 'api/stations/bounds'
+                },
+                {
+                  title: 'meteostat.Stations.region',
+                  path: 'api/stations/region'
+                },
+                {
+                  title: 'meteostat.Stations.id',
+                  path: 'api/stations/id'
+                },
+                {
+                  title: 'meteostat.Stations.inventory',
+                  path: 'api/stations/inventory'
+                },
+                {
+                  title: 'meteostat.Stations.convert',
+                  path: 'api/stations/convert'
+                },
+                {
+                  title: 'meteostat.Stations.fetch',
+                  path: 'api/stations/fetch'
+                },
+                {
+                  title: 'meteostat.Stations.count',
+                  path: 'api/stations/count'
+                },
+                {
+                  title: 'meteostat.Stations.clear_cache',
+                  path: 'api/stations/clear_cache'
+                },
+                {
+                  title: 'meteostat.Hourly',
+                  path: 'api/hourly/'
+                },
+                {
+                  title: 'meteostat.Hourly.normalize',
+                  path: 'api/hourly/normalize'
+                },
+                {
+                  title: 'meteostat.Hourly.aggregate',
+                  path: 'api/hourly/aggregate'
+                },
+                {
+                  title: 'meteostat.Hourly.interpolate',
+                  path: 'api/hourly/interpolate'
+                },
+                {
+                  title: 'meteostat.Hourly.convert',
+                  path: 'api/hourly/convert'
+                },
+                {
+                  title: 'meteostat.Hourly.coverage',
+                  path: 'api/hourly/coverage'
+                },
+                {
+                  title: 'meteostat.Hourly.fetch',
+                  path: 'api/hourly/fetch'
+                },
+                {
+                  title: 'meteostat.Hourly.count',
+                  path: 'api/hourly/count'
+                },
+                {
+                  title: 'meteostat.Hourly.clear_cache',
+                  path: 'api/hourly/clear_cache'
+                },
+                {
+                  title: 'meteostat.Daily',
+                  path: 'api/daily/'
+                },
+                {
+                  title: 'meteostat.Daily.normalize',
+                  path: 'api/daily/normalize'
+                },
+                {
+                  title: 'meteostat.Daily.aggregate',
+                  path: 'api/daily/aggregate'
+                },
+                {
+                  title: 'meteostat.Daily.interpolate',
+                  path: 'api/daily/interpolate'
+                },
+                {
+                  title: 'meteostat.Daily.convert',
+                  path: 'api/daily/convert'
+                },
+                {
+                  title: 'meteostat.Daily.coverage',
+                  path: 'api/daily/coverage'
+                },
+                {
+                  title: 'meteostat.Daily.fetch',
+                  path: 'api/daily/fetch'
+                },
+                {
+                  title: 'meteostat.Daily.count',
+                  path: 'api/daily/count'
+                },
+                {
+                  title: 'meteostat.Daily.clear_cache',
+                  path: 'api/daily/clear_cache'
+                },
+                {
+                  title: 'meteostat.units',
+                  path: 'api/units'
+                }
+              ]
             }
           ]
         }
