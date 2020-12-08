@@ -6,6 +6,29 @@ title: Daily Data | Python Library
 
 Aggregated daily data is very useful when analyzing weather and climate over a longer period of time. The data provided through the `Daily` class contains only aggregated observations. Model data is not included in those statistics which makes the data very accurate, but causes some gaps in the time series.
 
+## Example
+
+You can use the `Daily` class to retrieve historical data and prepare the records for further processing. For more complex analysis and visulization tasks you can utilize Pandas.
+
+```python
+# Import Meteostat library and dependencies
+from datetime import datetime
+import matplotlib.pyplot as plt
+from meteostat import Stations, Daily
+
+# Set time period
+start = datetime(2018, 1, 1)
+end = datetime(2018, 12, 31)
+
+# Get daily data
+data = Daily('10637', start, end)
+data = data.fetch()
+
+# Plot line chart including average, minimum and maximum temperature
+data.plot(y=['tavg', 'tmin', 'tmax'])
+plt.show()
+```
+
 ## API
 
 * [meteostat.Daily](api/daily/)

@@ -29,7 +29,7 @@ from meteostat import Daily, units
 start = datetime(2018, 1, 1)
 end = datetime(2018, 12, 31, 23, 59)
 
-data = Daily('72219', start, end)
+data = Hourly('72219', start, end)
 data = data.convert(units.imperial)
 data = data.fetch()
 

@@ -10,7 +10,7 @@ The Meteostat Python package is available through [PyPI](https://pypi.org/projec
 pip install meteostat
 ```
 
-## Quick Start
+## Example
 
 Let's pretend you want to plot temperature data for Vancouver, BC from 2018:
 

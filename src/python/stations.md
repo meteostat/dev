@@ -6,6 +6,23 @@ title: Weather Stations | Python Library
 
 In contrast to other meteorological data interfaces Meteostat does not use a global data model. Instead, Meteostat provides weather observations and long-term climate statistics for individual weather stations. Understandably, no one knows the identifiers of each and every weather station. Therefore, Meteostat provides the `Stations` class - a simple interface for querying weather stations using several filters.
 
+## Example
+
+Using the `Stations` class is pretty straight-forward. Just initialize a new instance and apply some filters using a [method](api/stations/#methods).
+
+```python
+# Import Meteostat library
+from meteostat import Stations
+
+# Get nearby weather stations
+stations = Stations()
+stations = stations.nearby(49.2497, -123.1193)
+station = stations.fetch(1)
+
+# Print DataFrame
+print(station)
+```
+
 ## API
 
 * [meteostat.Stations](api/stations/)

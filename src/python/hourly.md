@@ -6,6 +6,27 @@ title: Hourly Data | Python Library
 
 If you want to investigate the weather on a particular day or a short period of time, the `Hourly` class is a perfect match. It may include [MOSMIX](https://www.dwd.de/EN/ourservices/met_application_mosmix/met_application_mosmix.html) model data to fill gaps in the observations.
 
+## Example
+
+You can use the `Hourly` class to retrieve historical data and prepare the records for further processing. For more complex analysis and visulization tasks you can utilize Pandas.
+
+```python
+# Import Meteostat library and dependencies
+from datetime import datetime
+from meteostat import Daily
+
+# Set time period
+start = datetime(2018, 1, 1)
+end = datetime(2018, 12, 31, 23, 59)
+
+# Get hourly data
+data = Hourly('72219', start, end)
+data = data.fetch()
+
+# Print DataFrame
+print(data)
+```
+
 ## API
 
 * [meteostat.Hourly](api/hourly/)
