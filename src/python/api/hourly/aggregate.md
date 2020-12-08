@@ -8,6 +8,8 @@ Aggregation is an important tool in data analysis. Meteostat allows both time-wi
 
 ## Parameters
 
+The `freq` parameter specifies the time series frequency. For full specification of available frequencies, please see [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases). If you want to aggregate across all weather stations, just set the `spatial` parameter to `true`.
+
 | **Parameter** | **Description**                            | **Type** | **Default** |
 |:--------------|:-------------------------------------------|:---------|:------------|
 | freq          | Group by the specified frequency           | String   | '1H'        |

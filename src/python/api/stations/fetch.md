@@ -4,11 +4,13 @@ title: meteostat.Stations.fetch | API | Python Library
 
 # meteostat.Stations.fetch
 
-After you have specified a query through the `Stations` class you can now access the result using the `fetch()` method. It takes an optional `limit` argument. If no `limit` is specified, Meteostat will return all weather stations which meet the criteria. The weather stations are returned as a Pandas DataFrame.
-
-If you want to select a random subset of weather stations, just pass `sample=True` combined with any `limit` to the `fetch()` method. Sampling is useful for performing analysis of larger areas on a sample set of weather stations which represent the whole area.
+After you have specified a query through the `Stations` class you can now access the result using the `fetch()` method.
 
 ## Parameters
+
+The method takes an optional `limit` argument. If no `limit` is specified, Meteostat will return all weather stations which meet the criteria. The weather stations are returned as a Pandas DataFrame.
+
+If you want to select a random subset of weather stations, just pass `sample=True` combined with any `limit` to the `fetch()` method. Sampling is useful for performing analysis of larger areas on a sample set of weather stations which represent the whole area.
 
 | **Parameter** | **Description**                                                 | **Type** | **Default** |
 |:--------------|:----------------------------------------------------------------|:---------|:------------|

@@ -12,7 +12,7 @@ The `units` parameter takes a dictionary which specifies column-unit pairs.
 
 | **Parameter** | **Description**                                    | **Type**   | **Default** |
 |:--------------|:---------------------------------------------------|:-----------|:------------|
-| units         | Dictionary which maps attributes to a certain unit | Dictionary | `undefined` |
+| units         | Dictionary which maps attributes to a certain unit | Dictionary | undefined   |
 
 ## Returns
 

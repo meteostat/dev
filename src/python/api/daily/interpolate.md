@@ -8,6 +8,8 @@ The `interpolate` method closes gaps in time series by applying an interpolation
 
 ## Parameters
 
+The `limit` parameter specifies the maximum number of consecutive `NaN` values which should be filled.
+
 | **Parameter** | **Description**                                      | **Type** | **Default** |
 |:--------------|:-----------------------------------------------------|:---------|:------------|
 | limit         | Maximum number of missing consecutive values to fill | Integer  | 3           |
