@@ -4,7 +4,7 @@ title: Climate Normals | Weather Stations | JSON API
 
 # Climate Normals
 
-Climate normals are long-term averages of historical weather observations. Usually, these means are calculated over a period of 30 years (_“reference period“_). However, any other time series of sufficient length can be used to calculate climate normals.
+Climate normals are long-term averages of historical weather observations. Usually, these means are calculated over a period of 30 days (_“reference period“_). However, any other time series of sufficient length can be used to calculate climate normals.
 
 Climate normals represent the typical monthly weather at a given location. The averages can also be used for calculating anomalies of current weather and climate conditions.
 
