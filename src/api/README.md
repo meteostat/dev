@@ -1,6 +1,12 @@
 # JSON API
 
-The Meteostat JSON API provides simple access to a large archive of historical weather and climate data. The records are queried by weather station or geo location and can be filtered by specifying a date range and other optional parameters. The API is available via this URL:
+The Meteostat JSON API provides simple access to a large archive of historical weather and climate data. The records are queried by weather station or geo location and can be filtered by specifying a date range and other optional parameters.
+
+::: tip Donation
+Help Meteostat provide free weather and climate data by becoming a [Patron](https://www.patreon.com/meteostat) or donating via [PayPal](https://paypal.me/meteostat).
+:::
+
+The API is available via this URL:
 
 ```
 https://api.meteostat.net

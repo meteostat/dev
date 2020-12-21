@@ -2,6 +2,10 @@
 
 Meteostat is an open platform which provides **free access** to weather and climate statistics for **non-commercial purposes**.
 
+::: tip Donation
+Help Meteostat provide free weather and climate data by becoming a [Patron](https://www.patreon.com/meteostat) or donating via [PayPal](https://paypal.me/meteostat).
+:::
+
 ## Our Services
 
 Meteostat provides multiple interfaces for retrieving weather and climate data. Please choose from one of the following options:
