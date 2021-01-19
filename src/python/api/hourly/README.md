@@ -29,6 +29,8 @@ Attributes allow the configuration of general settings and behaviour.
 | max_threads   | Maximum number of threads used for data processing | Integer  | 1                  |
 | chunked       | Use chunked source data                            | Boolean  | True               |
 
+You can disable caching completely by setting `max_age` to `0`.
+
 When changing attributes, make sure to do so before creating a class instance:
 
 ```python{3}
