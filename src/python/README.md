@@ -14,6 +14,8 @@ The Meteostat Python package is available through [PyPI](https://pypi.org/projec
 pip install meteostat
 ```
 
+Meteostat **requires Python 3.5** or higher. Also, we recommend using a 64 bit version of Python due to the PyArrow dependency. If you're running into issues, please install Meteostat using the `--no-deps` flag and install the [requirements](https://github.com/meteostat/meteostat-python/blob/master/requirements.txt) (except PyArrow) manually. If you want to run Meteostat without PyArrow, please set the `max_age` attribute of the `Stations`, `Daily` and `Hourly` class to `0`. This will bypass the PyArrow-based cache.
+
 ## Example
 
 Let's pretend you want to plot temperature data for Vancouver, BC from 2018:
