@@ -28,7 +28,7 @@ vancouver = Point(49.2497, -123.1193, 70)
 
 Point data provides more complete time series, as observations of multiple stations are joined together. The data output is being interpolated based on the geographical distance between the different weather stations and the reference point of the query. Additionally, Meteostat adjusts measurements based on difference in altitude.
 
-Meteostat projects the existing observations which are provided by weather stations around the world to the location specified in the request. For more precise model output, please provide the elevation of your location using the `alt` parameter.
+Meteostat projects the existing observations which are provided by weather stations around the world onto the specified location. For more precise interpolation results, please provide the elevation of your location using the `alt` parameter.
 
 ### Weighted Average
 
