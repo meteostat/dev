@@ -14,7 +14,7 @@ Using the `Point` class is pretty straight-forward.
 
 ```python
 # Import Meteostat library
-from meteostat import Stations
+from meteostat import Point
 
 # Create Point for Vancouver, BC
 vancouver = Point(49.2497, -123.1193, 70)
