@@ -8,13 +8,13 @@ Query daily weather data for one or multiple weather stations.
 
 ## Parameters
 
-The `stations` parameter is required. You can pass a DataFrame returned by the [meteostat.Stations.fetch](/python/api/stations/fetch) method or provide one (String) or multiple Meteostat weather station identifiers (Tuple or List).
+The `stations` parameter is required. You can pass a [meteostat.Point](/python/api/point) or a DataFrame returned by the [meteostat.Stations.fetch](/python/api/stations/fetch) method or provide one (String) or multiple Meteostat weather station identifiers (Tuple or List).
 
-| **Parameter** | **Description**                  | **Type**                         | **Default** |
-|:--------------|:---------------------------------|:---------------------------------|:------------|
-| stations      | The weather stations             | DataFrame, String, Tuple or List | undefined   |
-| start         | Start date of the desired period | Datetime                         | None        |
-| end           | End date of the desired period   | Datetime                         | None        |
+| **Parameter** | **Description**                  | **Type**                                                     | **Default** |
+|:--------------|:---------------------------------|:-------------------------------------------------------------|:------------|
+| loc           | Weather station(s) or Point      | DataFrame, [Point](/python/api/point), String, Tuple or List | undefined   |
+| start         | Start date of the desired period | Datetime                                                     | None        |
+| end           | End date of the desired period   | Datetime                                                     | None        |
 
 ## Attributes
 

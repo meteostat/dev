@@ -190,6 +190,10 @@ module.exports = {
               path: '/python/'
             },
             {
+              title: 'Point Data',
+              path: 'point'
+            },
+            {
               title: 'Weather Stations',
               path: 'stations'
             },
@@ -208,6 +212,10 @@ module.exports = {
             {
               title: 'API',
               children: [
+                {
+                  title: 'meteostat.Point',
+                  path: 'api/point/'
+                },
                 {
                   title: 'meteostat.Stations',
                   path: 'api/stations/'
