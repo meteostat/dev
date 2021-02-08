@@ -466,8 +466,22 @@ module.exports = {
               path: 'https://medium.com/meteostat'
             },
             {
-              title: 'Donation',
-              path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
+              title: 'LinkedIn',
+              path: 'https://www.linkedin.com/company/meteostat/'
+            }
+          ]
+        },
+        {
+          title: 'Support',
+          collapsable: false,
+          children: [
+            {
+              title: 'Patreon',
+              path: 'https://www.patreon.com/meteostat'
+            },
+            {
+              title: 'PayPal',
+              path: 'https://www.paypal.me/meteostat'
             }
           ]
         }
