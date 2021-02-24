@@ -13,7 +13,7 @@ You can use the `Hourly` class to retrieve historical data and prepare the recor
 ```python
 # Import Meteostat library and dependencies
 from datetime import datetime
-from meteostat import Daily
+from meteostat import Hourly
 
 # Set time period
 start = datetime(2018, 1, 1)
