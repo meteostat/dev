@@ -16,6 +16,7 @@ The `stations` parameter is required. You can pass a [meteostat.Point](/python/a
 | start         | Start date of the desired period    | Datetime                                                     | None        |
 | end           | End date of the desired period      | Datetime                                                     | None        |
 | timezone      | Time zone of the period and records | String                                                       | None        |
+| model         | Include model data                  | Boolean                                                      | True        |
 
 ## Attributes
 

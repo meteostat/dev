@@ -15,6 +15,7 @@ The `stations` parameter is required. You can pass a [meteostat.Point](/python/a
 | loc           | Weather station(s) or Point      | DataFrame, [Point](/python/api/point), String, Tuple or List | undefined   |
 | start         | Start date of the desired period | Datetime                                                     | None        |
 | end           | End date of the desired period   | Datetime                                                     | None        |
+| model         | Include model data               | Boolean                                                      | True        |
 
 ## Attributes
 
