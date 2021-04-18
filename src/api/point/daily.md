@@ -62,7 +62,7 @@ Please replace `{key}` with your personal API key.
 
 ### Data Response
 
-The data output returns one object per hour. Have a look at this example:
+The data output returns one object per day. Have a look at this example:
 
 ```json
 {
