@@ -1,4 +1,4 @@
-# Formats and Units
+# Formats & Units
 
 Meteostat uses the metric system. Both the JSON API and the Bulk Data interface use the formats and units listed below.
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Meteostat is one of the largest vendors of open weather and climate data. Access long-term time series of thousands of weather stations and integrate Meteostat data into your products, applications and workflows. Thanks to our free data policy, Meteostat is an ideal source for research and educational projects.
+Meteostat is one of the largest vendors of open weather and climate data. Access long-term time series of thousands of weather stations and integrate Meteostat data into your products, applications and workflows. Thanks to our open data policy, Meteostat is an ideal data source for research and educational projects.
 
 ::: tip Donation
 Help Meteostat provide free weather and climate data by donating via [PayPal](https://paypal.me/meteostat).
@@ -10,9 +10,9 @@ Help Meteostat provide free weather and climate data by donating via [PayPal](ht
 
 Meteostat provides multiple interfaces for retrieving weather and climate data. Please choose from one of the following options:
 
+* [JSON API](/api/): Simple and fast access of Meteostat data in JSON format
 * [Python Library](/python/): Analyze historical weather data for thousands of weather stations
 * [Bulk Data](/bulk/): Download full data dumps of individual weather stations
-* [JSON API](/api/): Simple and fast access of Meteostat data in JSON format
 
 ## About Meteostat
 

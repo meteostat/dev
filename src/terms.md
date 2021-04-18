@@ -16,13 +16,13 @@ Meteostat may discontinue or block access to the services at any time without pr
 
 The use of our services is at your sole risk. The data provided by Meteostat is not intended to be used in any context where human life or property may be at risk.
 
+We cannot guarantee for the accuracy and completeness of the information provided through our services. Moreover, Meteostat is not responsible for any infringement of a copyright committed by a third-party.
+
 ## License
 
-Meteostat data is provided under the terms of the [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode). You are not allowed to redistribute Meteostat data "as-is" for commercial purposes.
+Meteostat data is generally provided under the terms of the [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode). In particular, you are not allowed to redistribute Meteostat data outside of the United States "as-is" for commercial purposes.
 
-Meteostat uses data of various meteorological services and organizations. Each of them has its own copyright restrictions. You agree to the terms of the different organizations and the policy of [WMO resolution 40](https://community.wmo.int/resolution-40). We cannot guarantee for the accuracy and completeness of the information provided on this website. Moreover, Meteostat is not responsible for any infringement of a copyright committed by a third-party.
-
-You agree to inform yourself about the terms of the different raw data providers used by Meteostat.
+This is due to the policy of [WMO resolution 40](https://community.wmo.int/resolution-40). According to the resolution, data must be distributed "free and unrestricted" and "at no more than the cost of reproduction and delivery, without charge for the data and products themselves".
 
 ## Attribution
 

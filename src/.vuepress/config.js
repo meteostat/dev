@@ -72,16 +72,16 @@ module.exports = {
         ]
       },
       {
+        text: 'JSON API',
+        link: '/api/'
+      },
+      {
         text: 'Python',
         link: '/python/'
       },
       {
         text: 'Bulk Data',
         link: '/bulk/'
-      },
-      {
-        text: 'JSON API',
-        link: '/api/'
       },
       {
         text: 'Contributing',
@@ -104,6 +104,10 @@ module.exports = {
               {
                 text: 'Blog',
                 link: 'https://medium.com/meteostat'
+              },
+              {
+                text: 'LinkedIn',
+                link: 'https://www.linkedin.com/company/meteostat/'
               },
               {
                 text: 'Donation',
@@ -452,9 +456,9 @@ module.exports = {
           title: 'Interfaces',
           collapsable: false,
           children: [
+            '/api/',
             '/python/',
-            '/bulk/',
-            '/api/'
+            '/bulk/'
           ]
         },
         {
@@ -474,7 +478,7 @@ module.exports = {
               path: 'https://www.linkedin.com/company/meteostat/'
             },
             {
-              title: 'PayPal',
+              title: 'PayPal Donation',
               path: 'https://www.paypal.me/meteostat'
             }
           ]
