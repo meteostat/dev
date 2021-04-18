@@ -22,9 +22,9 @@ Meteostat projects the existing observations which are provided by weather stati
 
 Meteostat provides three different endpoints for point data:
 
-* [Hourly Data](/api/point/hourly)
-* [Daily Data](/api/point/daily)
-* [Climate Normals](/api/point/climate)
+* [Hourly Data](hourly.md)
+* [Daily Data](daily.md)
+* [Climate Normals](climate.md)
 
 ## Vision
 
