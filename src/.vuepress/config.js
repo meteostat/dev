@@ -5,6 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Meteostat Developers',
+
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -50,8 +51,25 @@ module.exports = {
     logo: 'https://meteostat.net/files/icon.svg',
     nav: [
       {
-        text: 'Documentation',
-        link: '/docs/'
+        text: 'Guide',
+        items: [
+          {
+            text: 'Overview',
+            link: '/guide'
+          },
+          {
+            text: 'Formats & Units',
+            link: '/formats'
+          },
+          {
+            text: 'Terms & License',
+            link: '/terms'
+          },
+          {
+            text: 'Data Sources',
+            link: '/sources'
+          }
+        ]
       },
       {
         text: 'Python',
@@ -84,16 +102,12 @@ module.exports = {
                 link: 'https://twitter.com/meteost'
               },
               {
-                text: 'Slack',
-                link: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-              },
-              {
                 text: 'Blog',
                 link: 'https://medium.com/meteostat'
               },
               {
                 text: 'Donation',
-                link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJ54HBNT7YML&source=url'
+                link: 'https://www.paypal.me/meteostat'
               }
             ]
           },
@@ -102,7 +116,7 @@ module.exports = {
             items: [
               {
                 text: 'Terms & License',
-                link: '/docs/terms'
+                link: '/terms'
               }, {
                 text: 'Legal Disclosure',
                 link: 'https://meteostat.net/en/legal'
@@ -176,6 +190,10 @@ module.exports = {
             {
               title: 'Daily Data',
               path: 'daily'
+            },
+            {
+              title: 'Monthly Data',
+              path: 'monthly'
             }
           ]
         }
@@ -419,12 +437,12 @@ module.exports = {
           ]
         }
       ],
-      '/docs/': [
+      '/': [
         {
           title: 'Essentials',
           collapsable: false,
           children: [
-            '',
+            'guide',
             'formats',
             'terms',
             'sources'
@@ -440,16 +458,6 @@ module.exports = {
           ]
         },
         {
-          title: 'Miscellaneous',
-          collapsable: false,
-          children: [
-            {
-              title: 'Contributing',
-              path: '/contributing/'
-            }
-          ]
-        },
-        {
           title: 'Connect',
           collapsable: false,
           children: [
@@ -458,26 +466,12 @@ module.exports = {
               path: 'https://twitter.com/meteost'
             },
             {
-              title: 'Slack',
-              path: 'https://join.slack.com/t/meteostat/shared_invite/zt-dxmjmqvp-kMvf6zBDlnihYpoZBcqhhg'
-            },
-            {
               title: 'Blog',
               path: 'https://medium.com/meteostat'
             },
             {
               title: 'LinkedIn',
               path: 'https://www.linkedin.com/company/meteostat/'
-            }
-          ]
-        },
-        {
-          title: 'Support',
-          collapsable: false,
-          children: [
-            {
-              title: 'Patreon',
-              path: 'https://www.patreon.com/meteostat'
             },
             {
               title: 'PayPal',

@@ -6,10 +6,18 @@ title: Daily Data | Bulk Data
 
 This endpoint provides one GZ compressed CSV file per weather station.
 
-## Endpoint
+## Endpoints
+
+Full data dumps, including model data as substitute, are available here:
 
 ```
-https://bulk.meteostat.net/daily/{station}.csv.gz
+https://bulk.meteostat.net/v2/daily/full/{station}.csv.gz
+```
+
+If you only want real observation data, please use the following endpoint instead:
+
+```
+https://bulk.meteostat.net/v2/daily/obs/{station}.csv.gz
 ```
 
 Please replace `{station}` with the ID of a weather station.

@@ -8,22 +8,16 @@ Meteostat provides an open list of weather stations including inventory data.
 
 ## Endpoints
 
-You can access dumps of Meteostat's weather station directory through HTTPS.
-
-### Full Dump
-
 A JSON file containing all weather stations available at Meteostat, including inventory information and meta data, can be downloaded from this URL:
 
 ```
-https://bulk.meteostat.net/stations/full.json.gz
+https://bulk.meteostat.net/v2/stations/full.json.gz
 ```
-
-### Lite Dump
 
 A lite version of this dump file, containing only weather stations which did report data to Meteostat at any point in the past, is available here:
 
 ```
-https://bulk.meteostat.net/stations/lite.json.gz
+https://bulk.meteostat.net/v2/stations/lite.json.gz
 ```
 
 ## Properties
@@ -37,9 +31,6 @@ Both the lite and the regular dump are equally structured. Each object represent
 * `identifiers`: Identifiers (_Object_)
     * `national`: National ID (_String_)
     * `wmo`: WMO ID (_String_)
-    * `ghcn`: GHCN ID (_String_)
-    * `wban`: WBAN ID (_String_)
-    * `usaf`: USAF ID (_String_)
     * `icao`: ICAO ID (_String_)
     * `iata`: IATA ID (_String_)
 * `location`: Geographic location (_Object_)
@@ -48,6 +39,16 @@ Both the lite and the regular dump are equally structured. Each object represent
     * `elevation`: Elevation in meters (_Integer_)
 * `timezone`: Time zone (_String_)
 * `history`: Previous locations, identifiers or names (_Array_)
+* `inventory`: Available data by frequency (_Object_)
+    * `hourly`: Hourly inventory data (_Object_)
+      * `start`: First day (YYYY-MM-DD) of hourly data (_String_)
+      * `end`: Last day (YYYY-MM-DD) of hourly data (_String_)
+    * `daily`: Daily inventory data (_Object_)
+      * `start`: First day (YYYY-MM-DD) of daily data (_String_)
+      * `end`: Last day (YYYY-MM-DD) of daily data (_String_)
+    * `monthly`: Monthly inventory data (_Object_)
+      * `start`: First year (YYYY) of monthly data (_String_)
+      * `end`: Last year (YYYY) of monthly data (_String_)
 
 ## Contributing
 

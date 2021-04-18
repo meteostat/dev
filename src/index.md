@@ -3,7 +3,7 @@ home: true
 heroImage: https://meteostat.net/files/icon.svg
 tagline: Meteostat is an open platform which provides free access to weather and climate data.
 actionText: Documentation →
-actionLink: /docs/
+actionLink: /guide
 features:
 - title: Python Library
   details: The Meteostat Python library is a simple interface to our bulk data dumps. From explorations of single time series to complex analysis - our Python library is the easiest way to consume weather and climate data with the power of Pandas.
