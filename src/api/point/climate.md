@@ -40,7 +40,7 @@ The response body includes the following properties.
 | pres          | The average sea-level air pressure in hPa  | Float    |
 | tsun          | The average sunshine duration in hours (h) | Integer  |
 
-More information about the data format is available [here](/docs/formats.html).
+More information about the data format is available [here](/formats.html).
 
 Additionally, the `meta` object includes the `start` and `end` year of the climate averages.
 

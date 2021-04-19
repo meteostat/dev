@@ -51,7 +51,7 @@ The response body includes the following properties.
 | tsun          | The one hour sunshine total in minutes (m)                                 | Integer  |
 | coco          | The weather condition code                                                 | Integer  |
 
-More information on the data formats and weather condition codes is available [here](/docs/formats.html).
+More information on the data formats and weather condition codes is available [here](/formats.html).
 
 ## Example
 

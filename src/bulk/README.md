@@ -22,7 +22,7 @@ With our [Python library](/python/) we're providing a simple, yet powerful, wrap
 https://bulk.meteostat.net/v2
 ```
 
-In contrast to our JSON API the Bulk Data interface does not require an API key. However, when using this service you must comply with our [terms of service](/docs/terms.html). Please make sure to cache data if possible and forbear from sending malicious calls to this service.
+In contrast to our JSON API the Bulk Data interface does not require an API key. However, when using this service you must comply with our [terms of service](/terms.html). Please make sure to cache data if possible and forbear from sending malicious calls to this service.
 
 ## Update Cycle
 

@@ -42,4 +42,4 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 10        | pres          | The average sea-level air pressure in hPa | Float    |
 | 11        | tsun          | The daily sunshine total in minutes (m)   | Integer  |
 
-More information about the data format is available [here](/docs/formats.html).
+More information about the data format is available [here](/formats.html).

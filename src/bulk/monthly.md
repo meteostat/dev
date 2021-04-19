@@ -30,16 +30,17 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 
 | **Order** | **Parameter** | **Description**                                 | **Type** |
 |:----------|:--------------|:------------------------------------------------|:---------|
-| 1         | date          | The date string (format: YYYY-MM-DD)            | String   |
-| 2         | tavg          | The average air temperature in °C               | Float    |
-| 3         | tmin          | The average daily minimum air temperature in °C | Float    |
-| 4         | tmax          | The average daily maximum air temperature in °C | Float    |
-| 5         | prcp          | The monthly precipitation total in mm           | Float    |
-| 6         | snow          | The maximum snow depth in mm                    | Integer  |
-| 7         | wdir          | The average wind direction in degrees (°)       | Integer  |
-| 8         | wspd          | The average wind speed in km/h                  | Float    |
-| 9         | wpgt          | The peak wind gust in km/h                      | Float    |
-| 10        | pres          | The average sea-level air pressure in hPa       | Float    |
-| 11        | tsun          | The monthly sunshine total in minutes (m)       | Integer  |
+| 1         | year          | The year (format: YYYY)                         | Integer  |
+| 2         | month         | The month (format: MM)                          | Integer  |
+| 3         | tavg          | The average air temperature in °C               | Float    |
+| 4         | tmin          | The average daily minimum air temperature in °C | Float    |
+| 5         | tmax          | The average daily maximum air temperature in °C | Float    |
+| 6         | prcp          | The monthly precipitation total in mm           | Float    |
+| 7         | snow          | The maximum snow depth in mm                    | Integer  |
+| 8         | wdir          | The average wind direction in degrees (°)       | Integer  |
+| 9         | wspd          | The average wind speed in km/h                  | Float    |
+| 10        | wpgt          | The peak wind gust in km/h                      | Float    |
+| 11        | pres          | The average sea-level air pressure in hPa       | Float    |
+| 12        | tsun          | The monthly sunshine total in minutes (m)       | Integer  |
 
-More information about the data format is available [here](/docs/formats.html).
+More information about the data format is available [here](/formats.html).

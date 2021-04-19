@@ -48,7 +48,7 @@ The response body includes the following properties.
 | pres          | The average sea-level air pressure in hPa | Float    |
 | tsun          | The daily sunshine total in minutes (m)   | Integer  |
 
-More information about the data format is available [here](/docs/formats.html).
+More information about the data format is available [here](/formats.html).
 
 ## Example
 
