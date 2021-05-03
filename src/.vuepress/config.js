@@ -431,6 +431,10 @@ module.exports = {
                 {
                   title: 'JavaScript',
                   path: 'wrapper/javascript'
+                },
+                {
+                  title: 'PHP',
+                  path: 'https://gitlab.com/dweipert.de/meteostat'
                 }
               ]
             },
