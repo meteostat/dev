@@ -1,15 +1,9 @@
 const { description } = require('../../package')
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
   title: 'Meteostat Developers',
-
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: description,
+  theme: 'carbon',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -43,6 +37,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    carbonAds: {
+      serve: "CESDK2QN",
+      placement: "devmeteostatnet"
+    },
     docsRepo: 'meteostat/dev',
     docsDir: 'src',
     editLinks: true,
