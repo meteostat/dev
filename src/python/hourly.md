@@ -4,7 +4,7 @@ title: Hourly Data | Python Library
 
 # Hourly Data
 
-If you want to investigate the weather on a particular day or a short period of time, the `Hourly` class is a perfect match. It may include [MOSMIX](https://www.dwd.de/EN/ourservices/met_application_mosmix/met_application_mosmix.html) model data to fill gaps in the observations.
+If you want to investigate the weather on a particular day or a short period of time, the `Hourly` class is a perfect match. It may include model data to fill gaps in the observations.
 
 ## Example
 
@@ -40,7 +40,7 @@ print(data)
 
 ## Data Structure
 
-Each hour is represented by a Pandas DataFrame row which provides the weather data recorded at that time. These are the different columns:
+Each hour is represented by a Pandas `DataFrame` row which provides the weather data recorded at that time. These are the different columns:
 
 | **Column** | **Description**                                                                     | **Type**   |
 |:-----------|:------------------------------------------------------------------------------------|:-----------|

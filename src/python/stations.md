@@ -37,21 +37,23 @@ print(station)
 
 ## Data Structure
 
-Each weather station is represented by a Pandas DataFrame row which provides meta information about the station. These are the different columns:
+Each weather station is represented by a Pandas `DataFrame` row which provides meta information about the station. These are the different columns:
 
-| **Column**   | **Description**                                                | **Type**   |
-|:-------------|:---------------------------------------------------------------|:-----------|
-| id           | The Meteostat ID of the weather station                        | String     |
-| name         | The English name of the weather station                        | Object     |
-| country      | The ISO 3166-1 alpha-2 country code of the weather station     | String     |
-| state        | The ISO 3166-2 state or region code of the weather station     | String     |
-| wmo          | The WMO ID of the weather station                              | String     |
-| icao         | The ICAO ID of the weather station                             | String     |
-| latitude     | The latitude of the weather station                            | Float64    |
-| longitude    | The longitude of the weather station                           | Float64    |
-| elevation    | The elevation of the weather station in meters above sea level | Float64    |
-| timezone     | The time zone of the weather station                           | String     |
-| hourly_start | The first day on record for hourly data                        | Datetime64 |
-| hourly_end   | The last day on record for hourly data                         | Datetime64 |
-| daily_start  | The first day on record for daily data                         | Datetime64 |
-| daily_end    | The last day on record for daily data                          | Datetime64 |
+| **Column**    | **Description**                                                | **Type**   |
+|:--------------|:---------------------------------------------------------------|:-----------|
+| id            | The Meteostat ID of the weather station                        | String     |
+| name          | The English name of the weather station                        | String     |
+| country       | The ISO 3166-1 alpha-2 country code of the weather station     | String     |
+| state         | The ISO 3166-2 state or region code of the weather station     | String     |
+| wmo           | The WMO ID of the weather station                              | String     |
+| icao          | The ICAO ID of the weather station                             | String     |
+| latitude      | The latitude of the weather station                            | Float64    |
+| longitude     | The longitude of the weather station                           | Float64    |
+| elevation     | The elevation of the weather station in meters above sea level | Float64    |
+| timezone      | The time zone of the weather station                           | String     |
+| hourly_start  | The first day on record for hourly data                        | Datetime64 |
+| hourly_end    | The last day on record for hourly data                         | Datetime64 |
+| daily_start   | The first day on record for daily data                         | Datetime64 |
+| daily_end     | The last day on record for daily data                          | Datetime64 |
+| monthly_start | The first day on record for monthly data                       | Datetime64 |
+| monthly_end   | The last day on record for monthly data                        | Datetime64 |

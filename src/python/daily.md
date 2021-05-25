@@ -4,7 +4,7 @@ title: Daily Data | Python Library
 
 # Daily Data
 
-Aggregated daily data is very useful when analyzing weather and climate over a longer period of time. The data provided through the `Daily` class contains only aggregated observations. Model data is not included in those statistics which makes the data very accurate, but causes some gaps in the time series.
+Aggregated daily data is very useful when analyzing weather and climate over medium to long periods of time. It may include model data to fill gaps in the observations.
 
 ## Example
 
@@ -42,7 +42,7 @@ plt.show()
 
 ## Data Structure
 
-Each day is represented by a Pandas DataFrame row which provides the weather data recorded on that day. These are the different columns:
+Each day is represented by a Pandas `DataFrame` row which provides the weather data recorded on that day. These are the different columns:
 
 | **Column** | **Description**                                                                     | **Type**   |
 |:-----------|:------------------------------------------------------------------------------------|:-----------|

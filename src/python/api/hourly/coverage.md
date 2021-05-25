@@ -8,7 +8,7 @@ The `coverage` method provides information about the completeness of data. It ca
 
 ## Parameters
 
-You can specify an optional `parameter` to look for. This can be any [response parameter](/python/hourly.html#response-parameters) of the `Hourly` class (e.g. `temp` for the temperature).
+You can specify an optional `parameter` to look for. This can be any [response parameter](/python/hourly.html#data-structure) of the `Hourly` class (e.g. `temp` for the temperature).
 
 | **Parameter** | **Description**                                      | **Type** | **Default** |
 |:--------------|:-----------------------------------------------------|:---------|:------------|

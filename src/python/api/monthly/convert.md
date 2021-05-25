@@ -1,8 +1,8 @@
 ---
-title: meteostat.Stations.convert | API | Python Library
+title: meteostat.Monthly.convert | API | Python Library
 ---
 
-# meteostat.Stations.convert
+# meteostat.Monthly.convert
 
 Convert specific attributes to a different unit.
 
@@ -16,19 +16,18 @@ The `units` parameter takes a dictionary which specifies column-unit pairs.
 
 ## Returns
 
-`Stations` class instance
+`Monthly` class instance
 
 ## Example
 
-Get closest weather stations to Seattle, WA and convert distance to feet.
+Get monthly weather data for Atlanta International Airport and convert to imperial units.
 
-```python{5}
-from meteostat import Stations, units
+```python{4}
+from meteostat import Monthly, units
 
-stations = Stations()
-stations = stations.nearby(47.6062, -122.3321)
-stations = stations.convert({ 'distance': units.feet })
-stations = stations.fetch(10)
+data = Monthly('72219')
+data = data.convert(units.imperial)
+data = data.fetch()
 
-print(stations)
+print(data)
 ```

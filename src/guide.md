@@ -11,7 +11,7 @@ Help Meteostat provide free weather and climate data by donating via [PayPal](ht
 Meteostat provides multiple interfaces for retrieving weather and climate data. Please choose from one of the following options:
 
 * [JSON API](/api/): Simple and fast access of Meteostat data in JSON format
-* [Python Library](/python/): Analyze historical weather data for thousands of weather stations
+* [Python Library](/python/): Analyze historical weather data for thousands of weather stations using Pandas
 * [Bulk Data](/bulk/): Download full data dumps of individual weather stations
 
 ## About Meteostat

@@ -226,6 +226,14 @@ module.exports = {
               path: 'daily'
             },
             {
+              title: 'Monthly Data',
+              path: 'monthly'
+            },
+            {
+              title: 'Climate Normals',
+              path: 'normals'
+            },
+            {
               title: 'Contributing',
               path: 'contributing'
             },
@@ -347,6 +355,62 @@ module.exports = {
                 {
                   title: 'meteostat.Daily.clear_cache',
                   path: 'api/daily/clear_cache'
+                },
+                {
+                  title: 'meteostat.Monthly',
+                  path: 'api/monthly/'
+                },
+                {
+                  title: 'meteostat.Monthly.normalize',
+                  path: 'api/monthly/normalize'
+                },
+                {
+                  title: 'meteostat.Monthly.aggregate',
+                  path: 'api/monthly/aggregate'
+                },
+                {
+                  title: 'meteostat.Monthly.interpolate',
+                  path: 'api/monthly/interpolate'
+                },
+                {
+                  title: 'meteostat.Monthly.convert',
+                  path: 'api/monthly/convert'
+                },
+                {
+                  title: 'meteostat.Monthly.coverage',
+                  path: 'api/monthly/coverage'
+                },
+                {
+                  title: 'meteostat.Monthly.fetch',
+                  path: 'api/monthly/fetch'
+                },
+                {
+                  title: 'meteostat.Monthly.count',
+                  path: 'api/monthly/count'
+                },
+                {
+                  title: 'meteostat.Monthly.clear_cache',
+                  path: 'api/monthly/clear_cache'
+                },
+                {
+                  title: 'meteostat.Normals',
+                  path: 'api/normals/'
+                },
+                {
+                  title: 'meteostat.Normals.convert',
+                  path: 'api/normals/convert'
+                },
+                {
+                  title: 'meteostat.Normals.coverage',
+                  path: 'api/normals/coverage'
+                },
+                {
+                  title: 'meteostat.Normals.fetch',
+                  path: 'api/normals/fetch'
+                },
+                {
+                  title: 'meteostat.Normals.count',
+                  path: 'api/normals/count'
                 },
                 {
                   title: 'meteostat.units',

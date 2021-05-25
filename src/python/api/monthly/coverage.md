@@ -1,14 +1,14 @@
 ---
-title: meteostat.Daily.coverage | API | Python Library
+title: meteostat.Monthly.coverage | API | Python Library
 ---
 
-# meteostat.Daily.coverage
+# meteostat.Monthly.coverage
 
 The `coverage` method provides information about the completeness of data. It can be used to determine the coverage of records or individual parameters.
 
 ## Parameters
 
-You can specify an optional `parameter` to look for. This can be any [response parameter](/python/daily.html#data-structure) of the `Daily` class (e.g. `tmax` for the maximum temperature).
+You can specify an optional `parameter` to look for. This can be any [response parameter](/python/monthly.html#data-structure) of the `Monthly` class (e.g. `tmax` for the maximum temperature).
 
 | **Parameter** | **Description**                                      | **Type** | **Default** |
 |:--------------|:-----------------------------------------------------|:---------|:------------|
@@ -24,12 +24,12 @@ Check completeness of records for Sydney Airport in 2019.
 
 ```python{8}
 from datetime import datetime
-from meteostat import Daily
+from meteostat import Monthly
 
 start = datetime(2019, 1, 1)
 end = datetime(2019, 12, 31)
 
-data = Daily('94767', start=start, end=end)
+data = Monthly('94767', start, end)
 coverage = data.coverage()
 
 print(coverage)

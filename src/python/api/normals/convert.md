@@ -1,8 +1,8 @@
 ---
-title: meteostat.Stations.convert | API | Python Library
+title: meteostat.Normals.convert | API | Python Library
 ---
 
-# meteostat.Stations.convert
+# meteostat.Normals.convert
 
 Convert specific attributes to a different unit.
 
@@ -16,19 +16,18 @@ The `units` parameter takes a dictionary which specifies column-unit pairs.
 
 ## Returns
 
-`Stations` class instance
+`Normals` class instance
 
 ## Example
 
-Get closest weather stations to Seattle, WA and convert distance to feet.
+Get climate normals for Atlanta Airport and convert to imperial units.
 
-```python{5}
-from meteostat import Stations, units
+```python{4}
+from meteostat import Normals, units
 
-stations = Stations()
-stations = stations.nearby(47.6062, -122.3321)
-stations = stations.convert({ 'distance': units.feet })
-stations = stations.fetch(10)
+data = Normals('72219')
+data = data.convert(units.imperial)
+data = data.fetch()
 
-print(stations)
+print(data)
 ```

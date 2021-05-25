@@ -4,7 +4,7 @@ title: meteostat.Hourly | API | Python Library
 
 # meteostat.Hourly
 
-Query hourly weather data for one or multiple weather stations.
+Query hourly weather data for one or multiple weather stations or a single geographical point.
 
 ## Parameters
 
