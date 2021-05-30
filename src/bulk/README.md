@@ -11,7 +11,7 @@ Help Meteostat provide free weather and climate data by donating via [PayPal](ht
 The download of full data dumps is dead simple and doesn’t even require an API key:
 
 ```sh
-curl "https://bulk.meteostat.net/v2/hourly/10637.csv.gz" --output "10637.csv.gz"
+curl "https://bulk.meteostat.net/v2/hourly/full/10637.csv.gz" --output "10637.csv.gz"
 ```
 
 With our [Python library](/python/) we're providing a simple, yet powerful, wrapper for bulk data dumps. If you're into more complex analysis you should definitely have a look at it.
