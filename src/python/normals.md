@@ -1,8 +1,8 @@
 ---
-title: Normals Data | Python Library
+title: Climate Normals | Python Library
 ---
 
-# Normals Data
+# Climate Normals
 
 Climate normals provide an overview of the typical weather at a given location. Normals are usually calculated over a period of 30 years. You can also use a custom range of years, though.
 

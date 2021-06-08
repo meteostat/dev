@@ -10,12 +10,12 @@ Query climate normals for one or multiple weather stations or a single geographi
 
 The `loc` parameter is required. You can pass a [meteostat.Point](/python/api/point), a `DataFrame` returned by the [meteostat.Stations.fetch](/python/api/stations/fetch) method or provide one (String) or multiple Meteostat weather station identifiers (Tuple or List).
 
-| **Parameter** | **Description**                  | **Type**                                                     | **Default** |
-|:--------------|:---------------------------------|:-------------------------------------------------------------|:------------|
-| loc           | Weather station(s) or Point      | DataFrame, [Point](/python/api/point), String, Tuple or List | undefined   |
-| start         | Start date of the desired period | Datetime                                                     | None        |
-| end           | End date of the desired period   | Datetime                                                     | None        |
-| model         | Include model data               | Boolean                                                      | True        |
+| **Parameter** | **Description**                  | **Type**                                              | **Default** |
+|:--------------|:---------------------------------|:------------------------------------------------------|:------------|
+| loc           | Weather station(s) or Point      | DataFrame, [Point](/python/api/point), String or List | undefined   |
+| start         | Start date of the desired period | Datetime                                              | None        |
+| end           | End date of the desired period   | Datetime                                              | None        |
+| model         | Include model data               | Boolean                                               | True        |
 
 ## Attributes
 
