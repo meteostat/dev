@@ -66,7 +66,11 @@ module.exports = {
           {
             text: 'Data Sources',
             link: '/sources'
-          }
+          },
+          {
+            text: 'Contributing',
+            link: '/contributing'
+          },
         ]
       },
       {
@@ -80,10 +84,6 @@ module.exports = {
       {
         text: 'Bulk Data',
         link: '/bulk/'
-      },
-      {
-        text: 'Contributing',
-        link: '/contributing/'
       },
       {
         text: 'Project',
@@ -136,42 +136,6 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/contributing/': [
-        {
-          title: 'Fundamentals',
-          collapsable: false,
-          children: [
-            {
-              title: 'Getting Started',
-              path: '/contributing/'
-            },
-            {
-              title: 'Documentation',
-              path: 'docs'
-            }
-          ]
-        },
-        {
-          title: 'Data',
-          collapsable: false,
-          children: [
-            {
-              title: 'Weather Stations',
-              path: 'stations'
-            }
-          ]
-        },
-        {
-          title: 'Interfaces',
-          collapsable: false,
-          children: [
-            {
-              title: 'Python',
-              path: '/python/contributing'
-            }
-          ]
-        }
-      ],
       '/bulk/': [
         {
           title: 'Bulk Data',
@@ -515,7 +479,8 @@ module.exports = {
             'guide',
             'formats',
             'terms',
-            'sources'
+            'sources',
+            'contributing'
           ]
         },
         {
@@ -536,16 +501,12 @@ module.exports = {
               path: 'https://twitter.com/meteost'
             },
             {
-              title: 'Blog',
-              path: 'https://medium.com/meteostat'
-            },
-            {
               title: 'LinkedIn',
               path: 'https://www.linkedin.com/company/meteostat/'
             },
             {
-              title: 'PayPal Donation',
-              path: 'https://www.paypal.me/meteostat'
+              title: 'Blog',
+              path: 'https://medium.com/meteostat'
             }
           ]
         }

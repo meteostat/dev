@@ -3,7 +3,7 @@
 The Meteostat bulk data interface provides access to full data dumps of individual weather stations. The data is provided in CSV (weather data) and JSON (weather stations) format. Users are **not required to sign up** for this service.
 
 ::: tip Donation
-Help Meteostat provide free weather and climate data by donating via [PayPal](https://paypal.me/meteostat).
+Help Meteostat provide free weather and climate data by making a [donation](/contributing.html#donations).
 :::
 
 ## Quick Start

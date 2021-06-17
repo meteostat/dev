@@ -45,5 +45,5 @@ pylint meteostat/stations.py
 If you want to format an existing file correctly, you can use [autopep8](https://pypi.org/project/autopep8/) first:
 
 ```sh
-python3 -m autopep8 --in-place --aggressive meteostat/stations.py
+python3 -m autopep8 --in-place --aggressive meteostat/interface/stations.py
 ```

@@ -4,7 +4,7 @@ title: Climate Normals | Python Library
 
 # Climate Normals
 
-Climate normals provide an overview of the typical weather at a given location. Normals are usually calculated over a period of 30 years. You can also use a custom range of years, though.
+Climate normals provide an overview of the typical weather at a given location. Normals are usually calculated over a period of 30 years.
 
 ## Example
 
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from meteostat import Normals
 
 # Get Normals data
-data = Normals('10637', 1961, 1990)
+data = Normals('10637', (1961, 1990))
 data = data.fetch()
 
 # Plot line chart including average, minimum and maximum temperature
@@ -40,14 +40,13 @@ Each month is represented by a Pandas `DataFrame` row which provides the average
 | **Column** | **Description**                                                                     | **Type** |
 |:-----------|:------------------------------------------------------------------------------------|:---------|
 | station    | The Meteostat ID of the weather station (only if query refers to multiple stations) | String   |
+| start      | The first year (YYYY) of the reference period                                       | Integer  |
+| end        | The last year (YYYY) of the reference period                                        | Integer  |
 | month      | The month, represented as an integer                                                | Integer  |
 | tavg       | The mean air temperature in _°C_                                                    | Float64  |
 | tmin       | The mean minimum air temperature in _°C_                                            | Float64  |
 | tmax       | The mean maximum air temperature in _°C_                                            | Float64  |
 | prcp       | The mean monthly precipitation total in _mm_                                        | Float64  |
-| snow       | The mean maximum snow depth in _mm_                                                 | Float64  |
-| wdir       | The mean wind direction in degrees (_°_)                                            | Float64  |
 | wspd       | The mean wind speed in _km/h_                                                       | Float64  |
-| wpgt       | The mean peak wind gust in _km/h_                                                   | Float64  |
 | pres       | The mean sea-level air pressure in _hPa_                                            | Float64  |
 | tsun       | The mean sunshine total in minutes (_m_)                                            | Float64  |

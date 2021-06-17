@@ -10,12 +10,12 @@ Query climate normals for one or multiple weather stations or a single geographi
 
 The `loc` parameter is required. You can pass a [meteostat.Point](/python/api/point), a `DataFrame` returned by the [meteostat.Stations.fetch](/python/api/stations/fetch) method or provide one (String) or multiple Meteostat weather station identifiers (Tuple or List).
 
-| **Parameter** | **Description**                  | **Type**                                              | **Default** |
-|:--------------|:---------------------------------|:------------------------------------------------------|:------------|
-| loc           | Weather station(s) or Point      | DataFrame, [Point](/python/api/point), String or List | undefined   |
-| start         | Start date of the desired period | Datetime                                              | None        |
-| end           | End date of the desired period   | Datetime                                              | None        |
-| model         | Include model data               | Boolean                                               | True        |
+The `period` defaults to `auto` which will return climate normals for the latest available period. Alternatively, you can set the parameter to `all` if you need a DataFrame which contains all available reference periods. You can also set a specific period by passing a `tuple` which contains both the start and the end year (e.g. `(1960, 1990)`).
+
+| **Parameter** | **Description**             | **Type**                                              | **Default** |
+|:--------------|:----------------------------|:------------------------------------------------------|:------------|
+| loc           | Weather station(s) or Point | DataFrame, [Point](/python/api/point), String or List | undefined   |
+| period        | The reference period        | Tuple, String                                         | 'auto'      |
 
 ## Attributes
 

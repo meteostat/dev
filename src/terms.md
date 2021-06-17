@@ -20,7 +20,8 @@ We cannot guarantee for the accuracy and completeness of the information provide
 
 ## License
 
-Meteostat data is generally provided under the terms of the [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode). In particular, you are not allowed to redistribute Meteostat data outside of the United States "as-is" for commercial purposes.
+Meteostat data is generally provided under the terms of the [Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/legalcode). You may build upon the material
+for any purpose, even commercially. However, you are not allowed to redistribute Meteostat data "as-is" for commercial purposes outside of the US.
 
 This is due to the policy of [WMO resolution 40](https://community.wmo.int/resolution-40). According to the resolution, data must be distributed "free and unrestricted" and "at no more than the cost of reproduction and delivery, without charge for the data and products themselves".
 
