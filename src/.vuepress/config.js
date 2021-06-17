@@ -225,10 +225,6 @@ module.exports = {
                   path: 'api/stations/region'
                 },
                 {
-                  title: 'meteostat.Stations.id',
-                  path: 'api/stations/id'
-                },
-                {
                   title: 'meteostat.Stations.inventory',
                   path: 'api/stations/inventory'
                 },
