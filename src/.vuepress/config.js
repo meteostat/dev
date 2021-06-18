@@ -365,10 +365,6 @@ module.exports = {
                   path: 'api/normals/convert'
                 },
                 {
-                  title: 'meteostat.Normals.coverage',
-                  path: 'api/normals/coverage'
-                },
-                {
                   title: 'meteostat.Normals.fetch',
                   path: 'api/normals/fetch'
                 },
