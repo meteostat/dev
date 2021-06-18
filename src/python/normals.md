@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from meteostat import Normals
 
 # Get Normals data
-data = Normals('10637', (1961, 1990))
+data = Normals('10637', 1961, 1990)
 data = data.fetch()
 
 # Plot line chart including average, minimum and maximum temperature
@@ -29,7 +29,6 @@ plt.show()
 
 * [meteostat.Normals](api/normals/)
 * [meteostat.Normals.convert](api/normals/convert)
-* [meteostat.Normals.coverage](api/normals/coverage)
 * [meteostat.Normals.fetch](api/normals/fetch)
 * [meteostat.Normals.count](api/normals/count)
 
