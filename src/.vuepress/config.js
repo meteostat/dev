@@ -160,6 +160,10 @@ module.exports = {
             {
               title: 'Monthly Data',
               path: 'monthly'
+            },
+            {
+              title: 'Climate Normals',
+              path: 'normals'
             }
           ]
         }
