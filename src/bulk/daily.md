@@ -35,7 +35,7 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 3         | tmin          | The minimum air temperature in °C         | Float    |
 | 4         | tmax          | The maximum air temperature in °C         | Float    |
 | 5         | prcp          | The daily precipitation total in mm       | Float    |
-| 6         | snow          | The snow depth in mm                      | Integer  |
+| 6         | snow          | The maximum snow depth in mm              | Integer  |
 | 7         | wdir          | The average wind direction in degrees (°) | Integer  |
 | 8         | wspd          | The average wind speed in km/h            | Float    |
 | 9         | wpgt          | The peak wind gust in km/h                | Float    |
