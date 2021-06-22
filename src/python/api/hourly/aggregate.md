@@ -27,7 +27,7 @@ Meteostat uses the following aggregate functions:
 * `dwpt` => `mean`
 * `rhum` => `mean`
 * `prcp` => `sum`
-* `snow` => `mean`
+* `snow` => `max`
 * `wdir` => `mean`
 * `wspd` => `mean`
 * `wpgt` => `max`

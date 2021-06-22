@@ -24,10 +24,10 @@ The `freq` parameter specifies the time series frequency. For full specification
 Meteostat uses the following aggregate functions:
 
 * `tavg` => `mean`
-* `tmin` => `min`
-* `tmax` => `max`
+* `tmin` => `mean`
+* `tmax` => `mean`
 * `prcp` => `sum`
-* `snow` => `mean`
+* `snow` => `max`
 * `wdir` => `mean`
 * `wspd` => `mean`
 * `wpgt` => `max`
