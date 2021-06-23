@@ -43,7 +43,7 @@ This example requires the cURL command-line interface. Alternatively, you can us
 
 ```sh
 curl --request GET \
-	--url 'https://meteostat.p.rapidapi.com/stations/nearby?lat=51.5085&lon=-0.1257' \
+	--url 'https://meteostat.p.rapidapi.com/stations/nearby?lat=51.5085&lon=-0.1257&limit=5' \
 	--header 'x-rapidapi-host: meteostat.p.rapidapi.com' \
 	--header 'x-rapidapi-key: {key}'
 ```
@@ -57,49 +57,44 @@ The response should look like that:
 ```json
 {
     "meta": {
-        "exec_time": 0.197,
-        "generated": "2021-06-23 12:02:41"
+        "exec_time": 0.172,
+        "generated": "2021-06-23 18:36:46"
     },
     "data": [
         {
             "id": "03779",
+            "name": {
+                "en": "London Weather Centre"
+            },
             "distance": 1104.3
         },
         {
             "id": "EGLC0",
+            "name": {
+                "en": "London / Abbey Wood"
+            },
             "distance": 16804.1
         },
         {
             "id": "03672",
+            "name": {
+                "en": "Northolt"
+            },
             "distance": 20652.3
         },
         {
             "id": "03772",
+            "name": {
+                "en": "London Heathrow Airport"
+            },
             "distance": 22624.4
         },
         {
             "id": "03781",
+            "name": {
+                "en": "Kenley"
+            },
             "distance": 23370
-        },
-        {
-            "id": "EGKB0",
-            "distance": 24009.3
-        },
-        {
-            "id": "EGTI0",
-            "distance": 27961.2
-        },
-        {
-            "id": "03776",
-            "distance": 40063.6
-        },
-        {
-            "id": "03673",
-            "distance": 43155.8
-        },
-        {
-            "id": "EGUH0",
-            "distance": 46423.7
         }
     ]
 }
