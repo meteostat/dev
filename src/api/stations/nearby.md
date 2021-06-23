@@ -34,6 +34,7 @@ The response body includes the following properties.
 | **Parameter** | **Description**                                     | **Type** |
 |:--------------|:----------------------------------------------------|:---------|
 | id            | The Meteostat ID of the weather station             | String   |
+| name          | Name of the weather station in different languages  | Object   |
 | distance      | The distance to the provided geo location in meters | Float    |
 
 ## Example
