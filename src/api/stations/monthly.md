@@ -1,21 +1,19 @@
 ---
-title: Daily Data | Weather Stations | JSON API
+title: Monthly Data | Weather Stations | JSON API
 ---
 
-# Daily Data
+# Monthly Data
 
-This endpoint provides historical daily statistics for a particular weather station. The data provided through this endpoint is aggregated from multiple governmental interfaces.
+This endpoint provides historical monthly statistics for a particular weather station. The data provided through this endpoint is aggregated from multiple governmental interfaces.
 
-Daily data is coming in with an offset of about one to seven days. However, some data might be added multiple days or even months later, depending on how the different weather services are updating their datasets. Additionally, Meteostat provides daily aggregates based on hourly observations and model data.
-
-Daily data can be queried for a **maximum of 10 years** per request.
+Monthly data is coming in with an offset of multiple months. Additionally, Meteostat aggregates monthly data from hourly observations, daily records and model data.
 
 ## Endpoint
 
-Daily data is provided through this endpoint:
+Monthly data is provided through this endpoint:
 
 ```
-GET https://meteostat.p.rapidapi.com/stations/daily
+GET https://meteostat.p.rapidapi.com/stations/monthly
 ```
 
 ## Parameters
@@ -43,19 +41,19 @@ The `units` parameter takes one of the following values:
 
 The response body includes the following properties. Please note that all units mentioned below refer to the default `units` setting.
 
-| **Parameter** | **Description**                           | **Type** |
-|:--------------|:------------------------------------------|:---------|
-| date          | The date string (YYYY-MM-DD)              | String   |
-| tavg          | The average air temperature in °C         | Float    |
-| tmin          | The minimum air temperature in °C         | Float    |
-| tmax          | The maximum air temperature in °C         | Float    |
-| prcp          | The daily precipitation total in mm       | Float    |
-| snow          | The maximum snow depth in mm              | Integer  |
-| wdir          | The average wind direction in degrees (°) | Integer  |
-| wspd          | The average wind speed in km/h            | Float    |
-| wpgt          | The peak wind gust in km/h                | Float    |
-| pres          | The average sea-level air pressure in hPa | Float    |
-| tsun          | The daily sunshine total in minutes (m)   | Integer  |
+| **Parameter** | **Description**                                 | **Type** |
+|:--------------|:------------------------------------------------|:---------|
+| date          | The first date (YYYY-MM-DD) of the month        | String   |
+| tavg          | The average daily air temperature in °C         | Float    |
+| tmin          | The average daily minimum air temperature in °C | Float    |
+| tmax          | The average daily maximum air temperature in °C | Float    |
+| prcp          | The monthly precipitation total in mm           | Float    |
+| snow          | The maximum snow depth in mm                    | Integer  |
+| wdir          | The average wind direction in degrees (°)       | Integer  |
+| wspd          | The average wind speed in km/h                  | Float    |
+| wpgt          | The peak wind gust in km/h                      | Float    |
+| pres          | The average sea-level air pressure in hPa       | Float    |
+| tsun          | The monthly sunshine total in minutes (m)       | Integer  |
 
 More information about the data format is available [here](/formats.html).
 
@@ -65,7 +63,7 @@ The following example requires the cURL command-line interface. Alternatively, y
 
 ```sh
 curl --request GET \
-	--url 'https://meteostat.p.rapidapi.com/stations/daily?station=10637&start=2020-01-01&end=2020-01-31' \
+	--url 'https://meteostat.p.rapidapi.com/stations/monthly?station=10637&start=2020-01-01&end=2020-12-31' \
 	--header 'x-rapidapi-host: meteostat.p.rapidapi.com' \
 	--header 'x-rapidapi-key: {key}'
 ```
@@ -74,20 +72,20 @@ Please replace `{key}` with your personal API key.
 
 ### Data Response
 
-The data output returns one object per day. Have a look at this example:
+The data output returns one object per month. Have a look at this example:
 
 ```json
 {
-	"date": "2020-02-01",
-	"tavg": 11.4,
-	"tmin": 7.8,
-	"tmax": 12.8,
-	"prcp": 10.1,
+	"date": "2020-01-01",
+	"tavg": 4.1,
+	"tmin": 1,
+	"tmax": 7,
+	"prcp": 37,
 	"snow": 0,
-	"wdir": 210,
-	"wspd": 22.3,
-	"wpgt": 126,
-	"pres": 1009.6,
-	"tsun": 0
+	"wdir": 191.3,
+	"wspd": 11.2,
+	"wpgt": 77,
+	"pres": 1025.2,
+	"tsun": 3300
 }
 ```

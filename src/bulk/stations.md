@@ -49,6 +49,9 @@ Both the lite and the regular dump are equally structured. Each object represent
     * `monthly`: Monthly inventory data (_Object_)
       * `start`: First year (YYYY) of monthly data (_String_)
       * `end`: Last year (YYYY) of monthly data (_String_)
+    * `normals`: Climate normals inventory data (_Object_)
+      * `start`: First year (YYYY) of climate normals data (_String_)
+      * `end`: Last year (YYYY) of climate normals data (_String_)
 
 ## Contributing
 

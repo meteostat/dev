@@ -9,7 +9,7 @@ This endpoint provides information which describes a specific weather station. T
 ## Endpoint
 
 ```
-GET https://api.meteostat.net/v2/stations/meta
+GET https://meteostat.p.rapidapi.com/stations/meta
 ```
 
 ## Parameters
@@ -26,28 +26,45 @@ You’ll need to specify one of the following parameters.
 
 The response body includes the following properties.
 
-| **Parameter** | **Description**                                                           | **Type** |
-|:--------------|:--------------------------------------------------------------------------|:---------|
-| id            | The Meteostat ID of the weather station                                   | String   |
-| name          | Object containing the name of the weather stations in different languages | Object   |
-| country       | ISO 3166-1 alpha-2 country code of the weather station                    | String   |
-| region        | ISO 3166-2 state or region code of the weather station                    | String   |
-| national      | The national ID of the weather station                                    | String   |
-| wmo           | The WMO ID of the weather station                                         | Integer  |
-| icao          | The ICAO ID of the weather station                                        | String   |
-| iata          | The IATA ID of the weather station                                        | String   |
-| latitude      | The latitude of the weather station                                       | Float    |
-| longitude     | The longitude of the weather station                                      | Float    |
-| elevation     | The elevation of the weather station in meters above sea level            | Integer  |
-| timezone      | The time zone of the weather station                                      | String   |
-| inventory     | Object containing the periods of available data for this weather station  | Object   |
+* `id`: Meteostat ID (_String_)
+* `name`: Name in different languages (_Object_)
+* `country`: ISO 3166-1 alpha-2 country code, e.g. CA for Canada (_String_)
+* `region`: ISO 3166-2 state or region code, e.g. TX for Texas (_String_)
+* `identifiers`: Identifiers (_Object_)
+    * `national`: National ID (_String_)
+    * `wmo`: WMO ID (_String_)
+    * `icao`: ICAO ID (_String_)
+* `location`: Geographic location (_Object_)
+    * `latitude`: Latitude (_Float_)
+    * `longitude`: Longitude (_Float_)
+    * `elevation`: Elevation in meters (_Integer_)
+* `timezone`: Time zone (_String_)
+* `inventory`: Available data by frequency (_Object_)
+    * `model`: Hourly model inventory data (_Object_)
+      * `start`: First day (YYYY-MM-DD) of hourly model data (_String_)
+      * `end`: Last day (YYYY-MM-DD) of hourly model data (_String_)
+    * `hourly`: Hourly inventory data (_Object_)
+      * `start`: First day (YYYY-MM-DD) of hourly data (_String_)
+      * `end`: Last day (YYYY-MM-DD) of hourly data (_String_)
+    * `daily`: Daily inventory data (_Object_)
+      * `start`: First day (YYYY-MM-DD) of daily data (_String_)
+      * `end`: Last day (YYYY-MM-DD) of daily data (_String_)
+    * `monthly`: Monthly inventory data (_Object_)
+      * `start`: First year (YYYY) of monthly data (_String_)
+      * `end`: Last year (YYYY) of monthly data (_String_)
+    * `normals`: Climate normals inventory data (_Object_)
+      * `start`: First year (YYYY) of climate normals data (_Integer_)
+      * `end`: Last year (YYYY) of climate normals data (_Integer_)
 
 ## Example
 
 The following example requires the cURL command-line interface. Alternatively, you can use an API client like Postman.
 
 ```sh
-curl --header "x-api-key: {key}" "https://api.meteostat.net/v2/stations/meta?id=71508"
+curl --request GET \
+	--url 'https://meteostat.p.rapidapi.com/stations/meta?id=10637' \
+	--header 'x-rapidapi-host: meteostat.p.rapidapi.com' \
+	--header 'x-rapidapi-key: {key}'
 ```
 
 Please replace `{key}` with your personal API key.
@@ -59,32 +76,49 @@ That’s the expected response:
 ```json
 {
     "meta": {
-        "exec_time": 0.001,
-        "generated": "2020-06-02 15:54:27"
+        "exec_time": 0.003,
+        "generated": "2021-06-21 18:23:58"
     },
     "data": {
-        "id": "71508",
+        "id": "10637",
         "name": {
-            "en": "Toronto City"
+            "de": "Frankfurt Flughafen",
+            "es": "Aeropuerto de Fráncfort",
+            "en": "Frankfurt Airport"
         },
-        "country": "CA",
-        "region": "ON",
-        "national": null,
-        "wmo": "71508",
-        "icao": "CXTO",
-        "iata": null,
-        "latitude": 43.6667,
-        "longitude": -79.4,
-        "elevation": 113,
-        "timezone": "America/Toronto",
+        "country": "DE",
+        "region": "HE",
+        "identifier": {
+            "national": "01420",
+            "wmo": "10637",
+            "icao": "EDDF"
+        },
+        "location": {
+            "latitude": 50.05,
+            "longitude": 8.6,
+            "elevation": 111
+        },
+        "timezone": "Europe/Berlin",
         "inventory": {
+            "model": {
+                "start": "2018-01-28",
+                "end": "2021-06-29"
+            },
             "hourly": {
-                "start": "2004-08-03",
-                "end": "2020-05-31"
+                "start": "1926-01-01",
+                "end": "2021-06-20"
             },
             "daily": {
-                "start": "2002-06-04",
-                "end": "2020-05-25"
+                "start": "1934-05-01",
+                "end": "2021-06-18"
+            },
+            "monthly": {
+                "start": 1934,
+                "end": 2021
+            },
+            "normals": {
+                "start": 1961,
+                "end": 2020
             }
         }
     }

@@ -399,10 +399,6 @@ module.exports = {
                   path: 'stations/'
                 },
                 {
-                  title: 'Finding Stations',
-                  path: 'stations/search'
-                },
-                {
                   title: 'Nearby Stations',
                   path: 'stations/nearby'
                 },
@@ -419,8 +415,12 @@ module.exports = {
                   path: 'stations/daily'
                 },
                 {
+                  title: 'Monthly Data',
+                  path: 'stations/monthly'
+                },
+                {
                   title: 'Climate Normals',
-                  path: 'stations/climate'
+                  path: 'stations/normals'
                 }
               ]
             },
@@ -441,28 +441,18 @@ module.exports = {
                   path: 'point/daily'
                 },
                 {
-                  title: 'Climate Normals',
-                  path: 'point/climate'
-                }
-              ]
-            },
-            {
-              title: 'Wrapper',
-              collapsable: false,
-              children: [
-                {
-                  title: 'JavaScript',
-                  path: 'wrapper/javascript'
+                  title: 'Monthly Data',
+                  path: 'point/monthly'
                 },
                 {
-                  title: 'PHP',
-                  path: 'https://gitlab.com/dweipert.de/meteostat'
+                  title: 'Climate Normals',
+                  path: 'point/normals'
                 }
               ]
             },
             {
-              title: 'Get A Key',
-              path: 'https://auth.meteostat.net/'
+              title: 'Playground',
+              path: 'https://rapidapi.com/meteostat/api/meteostat/'
             }
           ]
         }
