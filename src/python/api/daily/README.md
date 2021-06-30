@@ -25,6 +25,7 @@ Attributes allow the configuration of general settings and behaviour.
 |:--------------|:-----------------------------------------------------|:---------|:-------------------|
 | cache_dir     | The path of the cache directory                      | String   | ~/.meteostat/cache |
 | cache_subdir  | The subdirectory of the cache                        | String   | daily              |
+| autoclean     | Remove outdated files automatically from cache       | Boolean  | `True`             |
 | max_age       | Maximum age of a cached file in seconds              | Integer  | 86400              |
 | processes     | Maximum number of processes used for data processing | Integer  | 1                  |
 | threads       | Maximum number of threads used for data processing   | Integer  | 1                  |
