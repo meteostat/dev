@@ -22,13 +22,14 @@ The `stations` parameter is required. You can pass a [meteostat.Point](/python/a
 
 Attributes allow the configuration of general settings and behaviour.
 
-| **Parameter** | **Description**                                    | **Type** | **Default**        |
-|:--------------|:---------------------------------------------------|:---------|:-------------------|
-| cache_dir     | The path of the cache directory                    | String   | ~/.meteostat/cache |
-| cache_subdir  | The subdirectory of the cache                      | String   | hourly             |
-| max_age       | Maximum age of a cached file in seconds            | Integer  | 86400              |
-| max_threads   | Maximum number of threads used for data processing | Integer  | 1                  |
-| chunked       | Use chunked source data                            | Boolean  | True               |
+| **Parameter** | **Description**                                      | **Type** | **Default**        |
+|:--------------|:-----------------------------------------------------|:---------|:-------------------|
+| cache_dir     | The path of the cache directory                      | String   | ~/.meteostat/cache |
+| cache_subdir  | The subdirectory of the cache                        | String   | hourly             |
+| max_age       | Maximum age of a cached file in seconds              | Integer  | 86400              |
+| processes     | Maximum number of processes used for data processing | Integer  | 1                  |
+| threads       | Maximum number of threads used for data processing   | Integer  | 1                  |
+| chunked       | Use chunked source data                              | Boolean  | True               |
 
 You can disable caching completely by setting `max_age` to `0`.
 

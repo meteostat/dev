@@ -14,12 +14,11 @@ This class does not take any parameters.
 
 Attributes allow the configuration of general settings and behaviour.
 
-| **Parameter** | **Description**                                    | **Type** | **Default**        |
-|:--------------|:---------------------------------------------------|:---------|:-------------------|
-| cache_dir     | The path of the cache directory                    | String   | ~/.meteostat/cache |
-| cache_subdir  | The subdirectory of the cache                      | String   | stations           |
-| max_age       | Maximum age of a cached file in seconds            | Integer  | 86400              |
-| max_threads   | Maximum number of threads used for data processing | Integer  | 1                  |
+| **Parameter** | **Description**                         | **Type** | **Default**        |
+|:--------------|:----------------------------------------|:---------|:-------------------|
+| cache_dir     | The path of the cache directory         | String   | ~/.meteostat/cache |
+| cache_subdir  | The subdirectory of the cache           | String   | stations           |
+| max_age       | Maximum age of a cached file in seconds | Integer  | 86400              |
 
 You can disable caching completely by setting `max_age` to `0`.
 
