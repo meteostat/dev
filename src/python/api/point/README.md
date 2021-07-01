@@ -22,7 +22,7 @@ Attributes allow the configuration of general settings and behaviour.
 
 | **Parameter** | **Description**                                                                                                              | **Type** | **Default** |
 |:--------------|:-----------------------------------------------------------------------------------------------------------------------------|:---------|:------------|
-| method        | The interpolation method ([weighted](/python/point.html#weighted-average) or [nearest](/python/point.html#nearest-neighbor)) | String   | weighted    |
+| method        | The interpolation method ([weighted](/python/point.html#weighted-average) or [nearest](/python/point.html#nearest-neighbor)) | String   | nearest     |
 | radius        | Maximum radius for nearby stations in meters                                                                                 | Integer  | 35000       |
 | alt_range     | Maximum difference in altitude meters                                                                                        | Integer  | 350         |
 | max_count     | Maximum number of stations used for interpolation                                                                            | Integer  | 4           |
