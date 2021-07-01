@@ -30,10 +30,10 @@ Point data provides more complete time series, as observations of multiple stati
 
 Meteostat projects the existing observations which are provided by weather stations around the world onto the specified location. For more precise interpolation results, please provide the elevation of your location using the `alt` parameter. If you do not specify the elevation, Meteostat will attempt to guess the point's elevation based on nearby weather stations.
 
-### Weighted Average
-
-By default, Meteostat uses weighted averages as its interpolation method. This method utilizes the geographical similarity of nearby weather stations and the provided point to weigh all available data and produce an aggregated output.
-
 ### Nearest Neighbor
 
-Another common interpolation method is _nearest neighbor_ interpolation. This method simply takes the closest neighbor for each record and joins all data into a unified `DataFrame`.
+A common interpolation method is _nearest neighbor_ interpolation. This method simply takes the closest neighbor for each record and joins all data into a unified `DataFrame`. Meteostat uses this interpolation method by default.
+
+### Weighted Average
+
+This alternative method utilizes the geographical similarity of nearby weather stations and the provided point to weigh all available data and produce an aggregated output.
