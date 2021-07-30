@@ -33,16 +33,16 @@ The Meteostat API uses abbreviations to describe meteorological parameters:
 
 ## Meteorological Data Units
 
-| **Parameter(s)**           | **Unit**       |
-|:---------------------------|:---------------|
-| Temperature                | °C             |
-| Precipitation              | mm             |
-| Sunshine Duration          | Minutes, Hours |
-| Air Pressure               | hPa            |
-| Wind Speed, Peak Wind Gust | km/h           |
-| Wind Direction             | Degrees        |
-| Visibility, Cloud Height   | m              |
-| Relative Humidity          | %              |
+| **Parameter(s)**           | **Unit** |
+|:---------------------------|:---------|
+| Temperature                | °C       |
+| Precipitation              | mm       |
+| Sunshine Duration          | Minutes  |
+| Air Pressure               | hPa      |
+| Wind Speed, Peak Wind Gust | km/h     |
+| Wind Direction             | Degrees  |
+| Visibility, Cloud Height   | m        |
+| Relative Humidity          | %        |
 
 ## Weather Condition Codes
 
