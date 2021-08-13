@@ -64,6 +64,10 @@ module.exports = {
             link: '/terms'
           },
           {
+            text: 'Data Quality',
+            link: '/quality'
+          },
+          {
             text: 'Data Sources',
             link: '/sources'
           },
@@ -71,6 +75,10 @@ module.exports = {
             text: 'Contributing',
             link: '/contributing'
           },
+          {
+            text: 'FAQ',
+            link: '/faq'
+          }
         ]
       },
       {
@@ -465,8 +473,10 @@ module.exports = {
             'guide',
             'formats',
             'terms',
+            'quality',
             'sources',
-            'contributing'
+            'contributing',
+            'faq'
           ]
         },
         {
