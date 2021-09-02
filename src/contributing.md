@@ -8,7 +8,7 @@ If you want to support Meteostat on its mission of making weather and climate da
 
 * Contribute to our open source repositories on [GitHub](https://github.com/meteostat)
 * Spread the news about Meteostat on social media or your website
-* Make a donation
+* Make a [donation](/contributing.html#donations)
 
 ## Open Source
 
@@ -49,5 +49,10 @@ If you prefer bank transfer, you can make a donation to this account:
 * Recipient: Christian Lamprecht
 * IBAN: DE76 1001 1001 2621 1459 29
 * BIC: NTSBDEB1XXX
+
+Meteostat also supports donations via crypto currencies:
+
+* Bitcoin: bc1qg2alt82ry2ntkslw8ulr9528nmlj6ym6g2x0ms
+* Ethereum: 0x5f4Dde3da1aE75280eFA6a62050c1D5cb1D7f694
 
 _Thanks a lot for your Support!_
