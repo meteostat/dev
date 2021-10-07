@@ -14,8 +14,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#0678BE' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['meta', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://meteostat.net/files/favicon-16x16.png' }],
-    ['meta', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://meteostat.net/files/favicon-32x32.png' }],
+    ['meta', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://media.meteostat.net/favicon-16x16.png' }],
+    ['meta', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://media.meteostat.net/favicon-32x32.png' }],
     ['meta', { rel: 'icon', href: 'https://meteostat.net/files/icon.svg' }],
     ['script', {}, `
       var _paq = window._paq = window._paq || [];
@@ -46,7 +46,7 @@ module.exports = {
     editLinks: true,
     docsBranch: 'main',
     lastUpdated: 'Last Updated',
-    logo: 'https://meteostat.net/files/icon.svg',
+    logo: 'https://media.meteostat.net/icon.svg',
     nav: [
       {
         text: 'Guide',
