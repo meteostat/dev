@@ -25,13 +25,24 @@ It can happen that the same weather station appears twice under different IDs. I
 1. Pick one of the existing JSON files.
 2. Add all identifiers and details available for this weather station. In case of inconsistencies, do some research or open an issue.
 3. Delete all duplicates.
-4. Create a pull request.
+5. Create a pull request.
 
 The following steps require access to the Meteostat database and can only be executed by admins:
 
+::: details Show steps for admins
+
 5. Merge the PR into `master`.
 6. Run the station import on Banff.
-7. Run the following SQL script for all duplicates:
+7. Delete corresponding entries in the `stations_inventory` table
+8. Clean the Bulk server by running the following Shell command inside the `bulk` directory:
+
+```sh
+find . -name '$duplicate.csv.gz' -delete
+```
+
+You'll have to replace `$duplicate` with the ID of a/the duplicate weather station. Repeat this for all duplicates.
+
+10. Run the following SQL script for all duplicates:
 
 Replace `$target` with the unique ID of the unified weather station and `$origin` with the ID of the duplicate. Please note that the table prefixes are required to avoid ambiguity in MariaDB. It might take a few minutes for the script to complete.
 
@@ -402,6 +413,7 @@ ON DUPLICATE KEY UPDATE
 
 DELETE FROM `normals_global` WHERE `station` = '$origin';
 ```
+:::
 
 ## Data Routines
 
