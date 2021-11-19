@@ -15,14 +15,14 @@ Many JSON API endpoints require the specification of a time range using the <cod
 The Meteostat API uses abbreviations to describe meteorological parameters:
 
 | **Code** | **Meaning**             |
-|:---------|:------------------------|
+| :------- | :---------------------- |
 | TEMP     | Air Temperature         |
 | TAVG     | Average Temperature     |
 | TMIN     | Minimum Temperature     |
 | TMAX     | Maximum Temperature     |
 | DWPT     | Dew Point               |
 | PRCP     | Total Precipitation     |
-| WDIR     | Wind Direction          |
+| WDIR     | Wind (From) Direction   |
 | WSPD     | Average Wind Speed      |
 | WPGT     | Wind Peak Gust          |
 | RHUM     | Relative Humidity       |
@@ -34,7 +34,7 @@ The Meteostat API uses abbreviations to describe meteorological parameters:
 ## Meteorological Data Units
 
 | **Parameter(s)**           | **Unit** |
-|:---------------------------|:---------|
+| :------------------------- | :------- |
 | Temperature                | °C       |
 | Precipitation              | mm       |
 | Sunshine Duration          | Minutes  |
@@ -51,7 +51,7 @@ Hourly weather data may include information on the observed weather condition. P
 Weather conditions are indicated by an integer value between 1 and 27 according to this list:
 
 | **Code** | **Weather Condition** |
-|:---------|:----------------------|
+| :------- | :-------------------- |
 | 1        | Clear                 |
 | 2        | Fair                  |
 | 3        | Cloudy                |
