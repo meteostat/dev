@@ -45,7 +45,7 @@ The data array of the response contains twelve objects (one per month) for every
 | tmax          | The average maximum temperature in °C      | Float    |
 | prcp          | The average total precipitation in mm      | Integer  |
 | pres          | The average sea-level air pressure in hPa  | Float    |
-| tsun          | The average sunshine duration in hours (h) | Integer  |
+| tsun          | The average sunshine duration in minutes   | Integer  |
 
 More information about the data format is available [here](/formats.html).
 
