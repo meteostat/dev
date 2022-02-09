@@ -8,21 +8,19 @@ This endpoint provides one GZ compressed CSV file per weather station. The provi
 
 ## Endpoints
 
-Full data dumps, including model data as substitute, are available here:
+Full data dumps, including model data as substitute for missing observations, are available here:
 
 ```
-https://bulk.meteostat.net/v2/hourly/full/{station}.csv.gz
+https://bulk.meteostat.net/v2/hourly/{station}.csv.gz
 ```
 
-If you only want real observation data, please use the following endpoint instead:
+Annual dumps are available, too:
 
 ```
-https://bulk.meteostat.net/v2/hourly/obs/{station}.csv.gz
+https://bulk.meteostat.net/v2/hourly/{year}/{station}.csv.gz
 ```
 
-Please replace `{station}` with the ID of a weather station.
-
-Weather stations are identified using their Meteostat ID, which equals the WMO ID for weather stations which are part of the WMO index.
+Please replace `{year}` with the desired year number and `{station}` with the ID of a weather station.
 
 ## Structure
 
@@ -45,3 +43,29 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 13        | coco          | The weather condition code                 | Integer  |
 
 More information on the data formats and weather condition codes is available [here](/formats.html).
+
+## Source Maps
+
+Each dump has a `.map` file associated with it. These source map files are equally structured as the dumps themselves. However, instead of numerical data, they contain flags which identify the original source of an observation or aggregation.
+
+To request a station's map file, use the following URL:
+
+```
+https://bulk.meteostat.net/v2/hourly/{station}.map.csv.gz
+```
+
+Please replace `{station}` with the ID of a weather station.
+
+### Flags
+
+Please refer to the following table for the meaning of the different flags:
+
+| **Flag** | **Source**                  |
+| -------- | --------------------------- |
+| **A**    | National weather service    |
+| **B**    | Global dataset (ISD)        |
+| **C**    | SYNOP reports               |
+| **D**    | METAR reports               |
+| **E**    | Model data (MOSMIX, Met.no) |
+
+If the data source is a national weather service (NWS), it refers to the NWS which operates the respective weather station.

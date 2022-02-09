@@ -8,28 +8,20 @@ This endpoint provides one GZ compressed CSV file per weather station.
 
 ## Endpoints
 
-Full data dumps, including model data as substitute, are available here:
+Full data dumps, including model data as substitute for missing records, are available here:
 
 ```
-https://bulk.meteostat.net/v2/daily/full/{station}.csv.gz
-```
-
-If you only want real observation data, please use the following endpoint instead:
-
-```
-https://bulk.meteostat.net/v2/daily/obs/{station}.csv.gz
+https://bulk.meteostat.net/v2/daily/{station}.csv.gz
 ```
 
 Please replace `{station}` with the ID of a weather station.
 
-Weather stations are identified using their Meteostat ID, which equals the WMO ID for weather stations which are part of the WMO index.
-
-## Structure
+## Data Structure
 
 CSV files provided through the Meteostat bulk data interface use commas as separators. Each file provides the following columns:
 
 | **Order** | **Parameter** | **Description**                           | **Type** |
-|:----------|:--------------|:------------------------------------------|:---------|
+| :-------- | :------------ | :---------------------------------------- | :------- |
 | 1         | date          | The date string (format: YYYY-MM-DD)      | String   |
 | 2         | tavg          | The average air temperature in °C         | Float    |
 | 3         | tmin          | The minimum air temperature in °C         | Float    |
@@ -43,3 +35,31 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 11        | tsun          | The daily sunshine total in minutes (m)   | Integer  |
 
 More information about the data format is available [here](/formats.html).
+
+## Source Maps
+
+Each dump has a `.map` file associated with it. These source map files are equally structured as the dumps themselves. However, instead of numerical data, they contain flags which identify the original source of an observation or aggregation.
+
+To request a station's map file, use the following URL:
+
+```
+https://bulk.meteostat.net/v2/daily/{station}.map.csv.gz
+```
+
+Please replace `{station}` with the ID of a weather station.
+
+### Flags
+
+Please refer to the following table for the meaning of the different flags:
+
+| **Flag** | **Source**                  | **Granularity** | **Aggregated** |
+| -------- | --------------------------- | --------------- | -------------- |
+| **A**    | National weather service    | Daily           | X              |
+| **B**    | Global dataset (GHCND)      | Daily           | X              |
+| **C**    | National weather service    | Hourly          | ✓              |
+| **D**    | Global dataset (ISD)        | Hourly          | ✓              |
+| **E**    | SYNOP reports               | Hourly          | ✓              |
+| **F**    | METAR reports               | Hourly          | ✓              |
+| **G**    | Model data (MOSMIX, Met.no) | Hourly          | ✓              |
+
+If the data source is a national weather service (NWS), it refers to the NWS which operates the respective weather station.

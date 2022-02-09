@@ -11,25 +11,17 @@ This endpoint provides one GZ compressed CSV file per weather station.
 Full data dumps, including model data as substitute, are available here:
 
 ```
-https://bulk.meteostat.net/v2/monthly/full/{station}.csv.gz
-```
-
-If you only want real observation data, please use the following endpoint instead:
-
-```
-https://bulk.meteostat.net/v2/monthly/obs/{station}.csv.gz
+https://bulk.meteostat.net/v2/monthly/{station}.csv.gz
 ```
 
 Please replace `{station}` with the ID of a weather station.
-
-Weather stations are identified using their Meteostat ID, which equals the WMO ID for weather stations which are part of the WMO index.
 
 ## Structure
 
 CSV files provided through the Meteostat bulk data interface use commas as separators. Each file provides the following columns:
 
 | **Order** | **Parameter** | **Description**                                 | **Type** |
-|:----------|:--------------|:------------------------------------------------|:---------|
+| :-------- | :------------ | :---------------------------------------------- | :------- |
 | 1         | year          | The year (format: YYYY)                         | Integer  |
 | 2         | month         | The month (format: MM)                          | Integer  |
 | 3         | tavg          | The average air temperature in °C               | Float    |
@@ -44,3 +36,33 @@ CSV files provided through the Meteostat bulk data interface use commas as separ
 | 12        | tsun          | The monthly sunshine total in minutes (m)       | Integer  |
 
 More information about the data format is available [here](/formats.html).
+
+## Source Maps
+
+Each dump has a `.map` file associated with it. These source map files are equally structured as the dumps themselves. However, instead of numerical data, they contain flags which identify the original source of an observation or aggregation.
+
+To request a station's map file, use the following URL:
+
+```
+https://bulk.meteostat.net/v2/monthly/{station}.map.csv.gz
+```
+
+Please replace `{station}` with the ID of a weather station.
+
+### Flags
+
+Please refer to the following table for the meaning of the different flags:
+
+| **Flag** | **Source**                  | **Granularity** | **Aggregated** |
+| -------- | --------------------------- | --------------- | -------------- |
+| **A**    | National weather service    | Monthly         | X              |
+| **B**    | Global dataset              | Monthly         | X              |
+| **C**    | National weather service    | Daily           | ✓              |
+| **D**    | Global dataset (GHCND)      | Daily           | ✓              |
+| **E**    | National weather service    | Hourly          | ✓              |
+| **F**    | Global dataset (ISD)        | Hourly          | ✓              |
+| **G**    | SYNOP reports               | Hourly          | ✓              |
+| **H**    | METAR reports               | Hourly          | ✓              |
+| **I**    | Model data (MOSMIX, Met.no) | Hourly          | ✓              |
+
+If the data source is a national weather service (NWS), it refers to the NWS which operates the respective weather station.
