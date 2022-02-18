@@ -3,7 +3,7 @@
 The Meteostat Python library provides simple access to open weather and climate data using Pandas. Historical observations and statistics are obtained from Meteostat's [bulk data interface](/bulk/) and consist of data provided by different public interfaces, most of which are governmental. Among the [data sources](/docs/sources.html) are national weather services like the National Oceanic and Atmospheric Administration (NOAA) and Germany's national meteorological service (DWD).
 
 ::: tip Donation
-Help Meteostat provide free weather and climate data by making a [donation](/contributing.html#donations).
+Help Meteostat provide free weather and climate data by making a [donation](/donate).
 :::
 
 ## Installation
@@ -14,7 +14,7 @@ The Meteostat Python package is available through [PyPI](https://pypi.org/projec
 pip install meteostat
 ```
 
-Meteostat **requires Python 3.5** or higher. If you want to visualize data, please install Matplotlib, too.
+Meteostat **requires Python 3.6** or higher. If you want to visualize data, please install Matplotlib, too.
 
 ## Example
 

@@ -29,14 +29,18 @@ print(data)
 
 ## API
 
+**Parent Class:** [meteostat.TimeSeries](/python/api/timeseries/)
+
 * [meteostat.Hourly](api/hourly/)
-* [meteostat.Hourly.normalize](api/hourly/normalize)
-* [meteostat.Hourly.aggregate](api/hourly/aggregate)
-* [meteostat.Hourly.interpolate](api/hourly/interpolate)
-* [meteostat.Hourly.convert](api/hourly/convert)
-* [meteostat.Hourly.coverage](api/hourly/coverage)
-* [meteostat.Hourly.fetch](api/hourly/fetch)
-* [meteostat.Hourly.count](api/hourly/count)
+* [meteostat.TimeSeries.normalize](api/timeseries/normalize)
+* [meteostat.TimeSeries.aggregate](api/timeseries/aggregate)
+* [meteostat.TimeSeries.interpolate](api/timeseries/interpolate)
+* [meteostat.TimeSeries.convert](api/timeseries/convert)
+* [meteostat.TimeSeries.coverage](api/timeseries/coverage)
+* [meteostat.TimeSeries.fetch](api/timeseries/fetch)
+* [meteostat.TimeSeries.count](api/timeseries/count)
+* [meteostat.TimeSeries.stations](api/timeseries/stations)
+* [meteostat.TimeSeries.clear_cache](api/timeseries/clear_cache)
 
 ## Data Structure
 

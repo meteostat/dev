@@ -31,14 +31,18 @@ plt.show()
 
 ## API
 
+**Parent Class:** [meteostat.TimeSeries](/python/api/timeseries/)
+
 * [meteostat.Daily](api/daily/)
-* [meteostat.Daily.normalize](api/daily/normalize)
-* [meteostat.Daily.aggregate](api/daily/aggregate)
-* [meteostat.Daily.interpolate](api/daily/interpolate)
-* [meteostat.Daily.convert](api/daily/convert)
-* [meteostat.Daily.coverage](api/daily/coverage)
-* [meteostat.Daily.fetch](api/daily/fetch)
-* [meteostat.Daily.count](api/daily/count)
+* [meteostat.TimeSeries.normalize](api/timeseries/normalize)
+* [meteostat.TimeSeries.aggregate](api/timeseries/aggregate)
+* [meteostat.TimeSeries.interpolate](api/timeseries/interpolate)
+* [meteostat.TimeSeries.convert](api/timeseries/convert)
+* [meteostat.TimeSeries.coverage](api/timeseries/coverage)
+* [meteostat.TimeSeries.fetch](api/timeseries/fetch)
+* [meteostat.TimeSeries.count](api/timeseries/count)
+* [meteostat.TimeSeries.stations](api/timeseries/stations)
+* [meteostat.TimeSeries.clear_cache](api/timeseries/clear_cache)
 
 ## Data Structure
 

@@ -23,15 +23,7 @@ When making changes to existing classes and methods, please check first if any t
 From the `/tests` directory, run the following command:
 
 ```sh
-python3 -m unittest discover
-```
-
-### Test Coverage
-
-Our goal is a test coverage of at least 95%. You will need to install [Coverage.py](https://coverage.readthedocs.io/) to measure test coverage. To check on the coverage, run the following command from the `/tests` directory:
-
-```sh
-python3 -m coverage run --source=. -m unittest discover && python3 -m coverage report
+pytest
 ```
 
 ## Linting

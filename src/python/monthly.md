@@ -31,14 +31,18 @@ plt.show()
 
 ## API
 
+**Parent Class:** [meteostat.TimeSeries](/python/api/timeseries/)
+
 * [meteostat.Monthly](api/monthly/)
-* [meteostat.Monthly.normalize](api/monthly/normalize)
-* [meteostat.Monthly.aggregate](api/monthly/aggregate)
-* [meteostat.Monthly.interpolate](api/monthly/interpolate)
-* [meteostat.Monthly.convert](api/monthly/convert)
-* [meteostat.Monthly.coverage](api/monthly/coverage)
-* [meteostat.Monthly.fetch](api/monthly/fetch)
-* [meteostat.Monthly.count](api/monthly/count)
+* [meteostat.TimeSeries.normalize](api/timeseries/normalize)
+* [meteostat.TimeSeries.aggregate](api/timeseries/aggregate)
+* [meteostat.TimeSeries.interpolate](api/timeseries/interpolate)
+* [meteostat.TimeSeries.convert](api/timeseries/convert)
+* [meteostat.TimeSeries.coverage](api/timeseries/coverage)
+* [meteostat.TimeSeries.fetch](api/timeseries/fetch)
+* [meteostat.TimeSeries.count](api/timeseries/count)
+* [meteostat.TimeSeries.stations](api/timeseries/stations)
+* [meteostat.TimeSeries.clear_cache](api/timeseries/clear_cache)
 
 ## Data Structure
 
@@ -52,9 +56,6 @@ Each month is represented by a Pandas `DataFrame` row which provides the weather
 | tmin       | The minimum air temperature in _°C_                                                 | Float64    |
 | tmax       | The maximum air temperature in _°C_                                                 | Float64    |
 | prcp       | The monthly precipitation total in _mm_                                             | Float64    |
-| snow       | The maximum snow depth in _mm_                                                      | Float64    |
-| wdir       | The average wind direction in degrees (_°_)                                         | Float64    |
-| wspd       | The average wind speed in _km/h_                                                    | Float64    |
-| wpgt       | The peak wind gust in _km/h_                                                        | Float64    |
+| wspd       | The average wind speed in _km/h_                                                    | Float64    ||
 | pres       | The average sea-level air pressure in _hPa_                                         | Float64    |
 | tsun       | The monthly sunshine total in minutes (_m_)                                         | Float64    |

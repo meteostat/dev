@@ -72,8 +72,12 @@ module.exports = {
             link: '/sources'
           },
           {
-            text: 'Contributing',
-            link: '/contributing'
+            text: 'Contribute',
+            link: '/contribute'
+          },
+          {
+            text: 'Donate',
+            link: '/donate'
           },
           {
             text: 'FAQ',
@@ -257,112 +261,56 @@ module.exports = {
                   path: 'api/stations/clear_cache'
                 },
                 {
+                  title: 'meteostat.TimeSeries',
+                  path: 'api/timeseries/'
+                },
+                {
+                  title: 'meteostat.TimeSeries.normalize',
+                  path: 'api/timeseries/normalize'
+                },
+                {
+                  title: 'meteostat.TimeSeries.aggregate',
+                  path: 'api/timeseries/aggregate'
+                },
+                {
+                  title: 'meteostat.TimeSeries.interpolate',
+                  path: 'api/timeseries/interpolate'
+                },
+                {
+                  title: 'meteostat.TimeSeries.convert',
+                  path: 'api/timeseries/convert'
+                },
+                {
+                  title: 'meteostat.TimeSeries.coverage',
+                  path: 'api/timeseries/coverage'
+                },
+                {
+                  title: 'meteostat.TimeSeries.fetch',
+                  path: 'api/timeseries/fetch'
+                },
+                {
+                  title: 'meteostat.TimeSeries.count',
+                  path: 'api/timeseries/count'
+                },
+                {
+                  title: 'meteostat.TimeSeries.stations',
+                  path: 'api/timeseries/stations'
+                },
+                {
+                  title: 'meteostat.TimeSeries.clear_cache',
+                  path: 'api/timeseries/clear_cache'
+                },
+                {
                   title: 'meteostat.Hourly',
                   path: 'api/hourly/'
-                },
-                {
-                  title: 'meteostat.Hourly.normalize',
-                  path: 'api/hourly/normalize'
-                },
-                {
-                  title: 'meteostat.Hourly.aggregate',
-                  path: 'api/hourly/aggregate'
-                },
-                {
-                  title: 'meteostat.Hourly.interpolate',
-                  path: 'api/hourly/interpolate'
-                },
-                {
-                  title: 'meteostat.Hourly.convert',
-                  path: 'api/hourly/convert'
-                },
-                {
-                  title: 'meteostat.Hourly.coverage',
-                  path: 'api/hourly/coverage'
-                },
-                {
-                  title: 'meteostat.Hourly.fetch',
-                  path: 'api/hourly/fetch'
-                },
-                {
-                  title: 'meteostat.Hourly.count',
-                  path: 'api/hourly/count'
-                },
-                {
-                  title: 'meteostat.Hourly.clear_cache',
-                  path: 'api/hourly/clear_cache'
                 },
                 {
                   title: 'meteostat.Daily',
                   path: 'api/daily/'
                 },
                 {
-                  title: 'meteostat.Daily.normalize',
-                  path: 'api/daily/normalize'
-                },
-                {
-                  title: 'meteostat.Daily.aggregate',
-                  path: 'api/daily/aggregate'
-                },
-                {
-                  title: 'meteostat.Daily.interpolate',
-                  path: 'api/daily/interpolate'
-                },
-                {
-                  title: 'meteostat.Daily.convert',
-                  path: 'api/daily/convert'
-                },
-                {
-                  title: 'meteostat.Daily.coverage',
-                  path: 'api/daily/coverage'
-                },
-                {
-                  title: 'meteostat.Daily.fetch',
-                  path: 'api/daily/fetch'
-                },
-                {
-                  title: 'meteostat.Daily.count',
-                  path: 'api/daily/count'
-                },
-                {
-                  title: 'meteostat.Daily.clear_cache',
-                  path: 'api/daily/clear_cache'
-                },
-                {
                   title: 'meteostat.Monthly',
                   path: 'api/monthly/'
-                },
-                {
-                  title: 'meteostat.Monthly.normalize',
-                  path: 'api/monthly/normalize'
-                },
-                {
-                  title: 'meteostat.Monthly.aggregate',
-                  path: 'api/monthly/aggregate'
-                },
-                {
-                  title: 'meteostat.Monthly.interpolate',
-                  path: 'api/monthly/interpolate'
-                },
-                {
-                  title: 'meteostat.Monthly.convert',
-                  path: 'api/monthly/convert'
-                },
-                {
-                  title: 'meteostat.Monthly.coverage',
-                  path: 'api/monthly/coverage'
-                },
-                {
-                  title: 'meteostat.Monthly.fetch',
-                  path: 'api/monthly/fetch'
-                },
-                {
-                  title: 'meteostat.Monthly.count',
-                  path: 'api/monthly/count'
-                },
-                {
-                  title: 'meteostat.Monthly.clear_cache',
-                  path: 'api/monthly/clear_cache'
                 },
                 {
                   title: 'meteostat.Normals',
@@ -475,7 +423,8 @@ module.exports = {
             'terms',
             'quality',
             'sources',
-            'contributing',
+            'contribute',
+            'donate',
             'faq'
           ]
         },

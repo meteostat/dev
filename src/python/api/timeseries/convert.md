@@ -1,8 +1,8 @@
 ---
-title: meteostat.Hourly.convert | API | Python Library
+title: meteostat.TimeSeries.convert | API | Python
 ---
 
-# meteostat.Hourly.convert
+# meteostat.TimeSeries.convert
 
 Convert specific attributes to a different unit.
 
@@ -16,9 +16,11 @@ The `units` parameter takes a dictionary which specifies column-unit pairs.
 
 ## Returns
 
-`Hourly` class instance
+A copy of `self`
 
-## Example
+## Examples
+
+### Hourly
 
 Get daily weather data for Atlanta International Airport in 2019 and convert to imperial units.
 
@@ -30,6 +32,34 @@ start = datetime(2018, 1, 1)
 end = datetime(2018, 12, 31, 23, 59)
 
 data = Hourly('72219', start, end)
+data = data.convert(units.imperial)
+data = data.fetch()
+
+print(data)
+```
+
+### Daily
+
+Get daily weather data for Atlanta International Airport and convert to imperial units.
+
+```python{4}
+from meteostat import Daily, units
+
+data = Daily('72219')
+data = data.convert(units.imperial)
+data = data.fetch()
+
+print(data)
+```
+
+### Monthly
+
+Get monthly weather data for Atlanta International Airport and convert to imperial units.
+
+```python{4}
+from meteostat import Monthly, units
+
+data = Monthly('72219')
 data = data.convert(units.imperial)
 data = data.fetch()
 

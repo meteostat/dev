@@ -27,5 +27,5 @@ Meteostat data is distributed under the terms of the CC BY-NC 4.0 license. [Clic
 :::
 
 ::: details Can I support Meteostat?
-We are very thankful for all kinds of support. You can learn more about contributing and donating to Meteostat [here](/contributing).
+We are very thankful for all kinds of support. Learn more about [contributing](/contribute) and [donating](/donate) to Meteostat.
 :::
