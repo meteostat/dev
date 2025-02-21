@@ -10,11 +10,11 @@ Automatically select weather stations by geographic location.
 
 The `lat` and `lon` parameters are required. You should also specify the `alt` parameter for better results.
 
-| **Parameter** | **Description** | **Type** | **Default** |
-|:--------------|:----------------|:---------|:------------|
-| lat           | The latitude    | Float    | undefined   |
-| lon           | The longitude   | Float    | undefined   |
-| alt           | The altitude    | Integer  | None        |
+| **Parameter** | **Description** | **Type** | **Default** | **Unit**        |
+|---------------|-----------------|----------|-------------|-----------------|
+| lat           | The latitude    | Float    | undefined   | Decimal degrees |
+| lon           | The longitude   | Float    | undefined   | Decimal degrees |
+| alt           | The altitude    | Integer  | None        | Meters          |
 
 ## Attributes
 
