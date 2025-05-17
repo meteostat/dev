@@ -60,4 +60,4 @@ Each hour is represented by a Pandas `DataFrame` row which provides the weather 
 | wpgt       | The peak wind gust in _km/h_                                                        | Float64    |
 | pres       | The average sea-level air pressure in _hPa_                                         | Float64    |
 | tsun       | The one hour sunshine total in minutes (_m_)                                        | Float64    |
-| coco       | The [weather condition code](/docs/formats.html#weather-condition-codes)            | Float64    |
+| coco       | The [weather condition code](/formats.html#weather-condition-codes)                 | Float64    |
