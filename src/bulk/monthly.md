@@ -8,7 +8,7 @@ This endpoint provides one GZ compressed CSV file per weather station.
 
 ## Endpoints
 
-Ddata dumps, including model data as substitute for missing observations, are available here:
+Data dumps, including model data as substitute for missing observations, are available here:
 
 ```
 https://data.meteostat.net/monthly/{station}.csv.gz
